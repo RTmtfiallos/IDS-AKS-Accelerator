@@ -1,12 +1,14 @@
 # ABC's Azure Kubernetes Service - Wizard/Configurator
 
-Building Kubernetes clusters can be hard work! The AKS Bicep Accelerator focuses on expediting customers onboarding of Azure Kubernetes Service workloads using best practices and a flexible templating approach to suit differing requirements.
+Building Kubernetes clusters can be hard work!
 
-This project unifies guidance provided by the [AKS Secure Baseline](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks), [Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/), [Cloud Adoption Framework](https://azure.microsoft.com/en-gb/cloud-adoption-framework/) and [Enterprise-Scale](https://github.com/Azure/Enterprise-Scale) by providing tangible artifacts to deploy Azure resources from CLI or CI/CD systems.
+The Randstad team focuses on expediting ABC's onboarding of Azure Kubernetes Service workloads using best practices and a flexible templating approach to suit differing requirements.
+
+I have combined guidance provided by the [AKS Secure Baseline](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks), [Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/), [Cloud Adoption Framework](https://azure.microsoft.com/en-gb/cloud-adoption-framework/) and [Enterprise-Scale](https://github.com/Azure/Enterprise-Scale) by providing tangible artifacts to deploy Azure resources from CLI or CI/CD systems.
 
 ## The 3 Components
 
-This projects focus is split equally over 3 areas, configuration, modular templating and CI implementation.
+We will focus equally over 3 areas, configuration, modular templating and CI implementation.
 
 ![project component areas](docassets/AKSBicepComponents.png)
 
@@ -34,22 +36,23 @@ CI Name | Actions Workflow | Parameter file | CI Status | Notes
 | BYO Vnet | [ByoVnetCI.yml](https://github.com/Azure/Aks-Construction/blob/main/.github/workflows/ByoVnetCI.yml) | [ESLZ Byo peered vnet](.github/workflows_dep/AksDeploy-ByoVnet.parameters.json) | [![ByoVnetCI](https://github.com/Azure/Aks-Construction/actions/workflows/ByoVnetCI.yml/badge.svg?branch=main)](https://github.com/Azure/Aks-Construction/actions/workflows/ByoVnetCI.yml) | Comprehensive IaC flow deploying multiple smoke-test apps |
 | Private cluster | [ByoVnetPrivateCI.yml](https://github.com/Azure/Aks-Construction/blob/main/.github/workflows/ByoVnetPrivateCI.yml) | [ESLZ Byo private vnet](.github/workflows_dep/AksDeploy-ByoVnetPrivate.parameters.json) | [![ByoVNetPrivateCI](https://github.com/Azure/Aks-Construction/actions/workflows/ByoVnetPrivateCI.yml/badge.svg)](https://github.com/Azure/Aks-Construction/actions/workflows/ByoVnetPrivateCI.yml)| As above, but with a focus on private networking |
 
-For a more in depth look at the GitHub Actions used in this project, which steps are performed and the different CI practices they demonstrate, please refer to [this page](GhActions.md).
+For a more in depth look at the GitHub Actions I created, which steps are performed and the different CI practices they demonstrate, please refer to [this page](GhActions.md).
+
+I have already begun work on an Azure DevOps pipeline as oposed to leveraging GitHub.
 
 ## Getting Started
-
 ### Basic
 
-If this is the first time you're using the project, follow these steps.
+If this is the first time you are working with Bicep files, follow these steps.
 
 1. Use the [Deployment Helper](https://azure.github.io/Aks-Construction/) to guide your AKS configuration.
 1. Run the commands in the *Provision Environment* tab to create your AKS Environment in your Azure subscription
 1. Run the commands in the *Post Configuration* tab to complete your implementation
 1. [Connect to your AKS Cluster](https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough#connect-to-the-cluster), and deploy your applications as you see fit.
 
-### Mature
+### Mature/Advanced
 
-If you're looking to use this project as part of your deployments, follow these steps.
+If you're looking to the raw data as part of your deployments, follow these steps.
 
 1. Use the [Deployment Helper](https://azure.github.io/Aks-Construction/) to guide your AKS configuration.
 1. Capture the parameters on the *Template Parameters File* tab to a file - this is your configuration
@@ -59,9 +62,9 @@ If you're looking to use this project as part of your deployments, follow these 
 1. In your CI/CD system, either using one of the GitHub Action Workflow files as a base, or by coding it yourself - initiate a deployment of the bicep code, using your parameter file
 1. In your CI/CD system, deploy your application(s) to the AKS cluster
 
-## Project Principals
+## Guiding Principals
 
-The guiding principal we have with this project is to focus on the the *downstream use* of the project (see [releases](https://github.com/Azure/Aks-Construction/releases)). As such, these are our specific practices.
+The guiding principal we have with is to focus on the the *downstream use* of the the parameters (see [releases](https://github.com/Azure/Aks-Construction/releases)). As such, these are our specific practices.
 
 1. Deploy all components through a single, modular, idempotent bicep template Converge on a single bicep template, which can easily be consumed as a module
 2. Provide best-practice defaults, then use parameters for different environment deployments
