@@ -1,4 +1,4 @@
-# AKS Bicep Accelerator
+# ABC's Azure Kubernetes Service - Wizard/Configurator
 
 Building Kubernetes clusters can be hard work! The AKS Bicep Accelerator focuses on expediting customers onboarding of Azure Kubernetes Service workloads using best practices and a flexible templating approach to suit differing requirements.
 
