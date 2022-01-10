@@ -41,7 +41,6 @@ For a more in depth look at the GitHub Actions I created, which steps are perfor
 I have already begun work on an Azure DevOps pipeline as oposed to leveraging GitHub.
 
 ## Getting Started
-
 ### Basic
 
 If this is the first time you are working with Bicep files, follow these steps.
