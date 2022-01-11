@@ -14,7 +14,9 @@ We will focus equally over 3 areas, configuration, modular templating and CI imp
 
 ### Wizard experience
 
-To help guide your AKS configuration, use the [Deployment Helper](https://azure.github.io/Aks-Construction/), which will provide a set of parameters and scripts to make deployment simple. It uses several preset configurations to guide configuration decisions.
+To help guide your initial AKS configuration, use the [Deployment Helper](https://azure.github.io/Aks-Construction/), which will provide a set of parameters and scripts to make deployment simple. It uses several preset configurations to guide configuration decisions.
+
+
 The deployment helper provides links to the official Microsoft documentation to help provide additional context for each feature.
 
 [![preview screenshot of the helper wizard](helper_preview_es.png)](https://azure.github.io/Aks-Construction/)
@@ -41,26 +43,27 @@ For a more in depth look at the GitHub Actions I created, which steps are perfor
 I have already begun work on an Azure DevOps pipeline as oposed to leveraging GitHub.
 
 ## Getting Started
+
 ### Basic
 
 If this is the first time you are working with Bicep files, follow these steps.
 
 1. Use the [Deployment Helper](https://azure.github.io/Aks-Construction/) to guide your AKS configuration.
-1. Run the commands in the *Provision Environment* tab to create your AKS Environment in your Azure subscription
-1. Run the commands in the *Post Configuration* tab to complete your implementation
-1. [Connect to your AKS Cluster](https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough#connect-to-the-cluster), and deploy your applications as you see fit.
+2. Run the commands in the *Provision Environment* tab to create your AKS Environment in your Azure subscription
+3. Run the commands in the *Post Configuration* tab to complete your implementation
+4. [Connect to your AKS Cluster](https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough#connect-to-the-cluster), and deploy your applications as you see fit.
 
 ### Mature/Advanced
 
 If you're looking to the raw data as part of your deployments, follow these steps.
 
 1. Use the [Deployment Helper](https://azure.github.io/Aks-Construction/) to guide your AKS configuration.
-1. Capture the parameters on the *Template Parameters File* tab to a file - this is your configuration
-1. Check the *Post Configuration* tab for any commands and save them to a file
-1. Grab the [latest release](https://github.com/Azure/Aks-Construction/releases) of the bicep code
-1. (optionally) Author an Application Main bicep to represent *your application* (see [here](https://github.com/Azure/Aks-Construction/blob/main/samples/SampleAppMain.bicep) for an example)
-1. In your CI/CD system, either using one of the GitHub Action Workflow files as a base, or by coding it yourself - initiate a deployment of the bicep code, using your parameter file
-1. In your CI/CD system, deploy your application(s) to the AKS cluster
+2. Capture the parameters on the *Template Parameters File* tab to a file - this is your configuration
+3. Check the *Post Configuration* tab for any commands and save them to a file
+4. Grab the [latest release](https://github.com/Azure/Aks-Construction/releases) of the bicep code
+5. (optionally) Author an Application Main bicep to represent *your application* (see [here]([ABC-AKS/SampleAppMain.bicep at main · RTmtfiallos/ABC-AKS · GitHub](https://github.com/rtmtfiallos/ABC-AKS/blob/main/samples/SampleAppMain.bicep)) for an example)
+6. In your CI/CD system, either using one of the GitHub Action Workflow files as a base, or by coding it yourself - initiate a deployment of the bicep code, using your parameter file
+7. In your CI/CD system, deploy your application(s) to the AKS cluster
 
 ## Guiding Principals
 
