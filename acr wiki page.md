@@ -2,32 +2,18 @@ Assorted things to do after the initial deply.sh has been run successfully:
 
 + Go to ACR via the portal, click connected regisitries, then click Enable registry endpoint to use connected registries
 
-
-
-
-
-
-
-
-
 ## Configure client firewall rules for MCR
 
 If you need to access Microsoft Container Registry (MCR) from behind a firewall, see the guidance to configure [MCR client firewall rules](https://github.com/microsoft/containerregistry/blob/master/client-firewall-rules.md). MCR is the primary registry for all Microsoft-published docker images, such as Windows Server images.
-
-
 
 + Learn more about [security groups](https://docs.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview) in an Azure virtual network
 
 + Learn more about setting up [Private Link](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-private-link) for a container registry
 
-
-
 ## Restrict access to a container registry using a service endpoint in an Azure virtual network
 
 + Only an [Azure Kubernetes Service](https://docs.microsoft.com/en-us/azure/aks/intro-kubernetes) cluster or Azure [virtual machine](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/overview) can be used as a host to access a container registry using a service endpoint. *Other Azure services including Azure Container Instances aren't supported.*
 + Service endpoints for Azure Container Registry aren't supported in the Azure US Government cloud or Azure China cloud.
-
-
 
 ## Prerequisites
 
@@ -46,6 +32,10 @@ If you need to access Microsoft Container Registry (MCR) from behind a firewall,
   ```
 
 ## [](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-vnet#create-a-docker-enabled-virtual-machine)Create a Docker-enabled virtual machine
+
+
+
+
 
 For test purposes, use a Docker-enabled Ubuntu VM to access an Azure container registry. To use Azure Active Directory authentication to the registry, also install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) on the VM. If you already have an Azure virtual machine, skip this creation step.
 
