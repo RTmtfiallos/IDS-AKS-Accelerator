@@ -1,4 +1,4 @@
-Assorted things to do after the initial deply.sh has been run successfully:
+Assorted things to do after the initial deploy.sh has been run successfully:
 
 + Go to ACR via the portal, click connected regisitries, then click Enable registry endpoint to use connected registries
 
