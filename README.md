@@ -14,6 +14,8 @@ We will focus equally over 3 areas, configuration, modular templating and CI imp
 
 ### Wizard experience
 
+
+
 To help guide your initial AKS configuration, use the [Deployment Helper](https://azure.github.io/Aks-Construction/), which will provide a set of parameters and scripts to make deployment simple. It uses several preset configurations to guide configuration decisions.
 
 The deployment helper provides links to the official Microsoft documentation to help provide additional context for each feature.
