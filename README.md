@@ -41,7 +41,7 @@ CI Name | Actions Workflow | Parameter file | CI Status | Notes
 
 For a more in depth look at the GitHub Actions I created, which steps are performed and the different CI practices they demonstrate, please refer to [this page](GhActions.md).
 
-I have already begun work on an Azure DevOps pipeline as oposed to leveraging GitHub.
+I have already begun work on an Azure DevOps pipeline as opposed to leveraging GitHub.
 
 ## Getting Started
 
