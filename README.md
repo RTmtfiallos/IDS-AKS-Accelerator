@@ -1,4 +1,4 @@
-# ABC's Azure Kubernetes Service - Wizard/Configurator
+# ABC's Azure Kubernetes Service - Wizard/Configurator :D
 
 Building Kubernetes clusters can be hard work!
 
