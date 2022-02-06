@@ -1,18 +1,4 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-- [ABC's Azure Kubernetes Service - Wizard/Configurator :D](#abcs-azure-kubernetes-service---wizardconfigurator-d)
-  - [The 3 Components](#the-3-components)
-    - [Wizard experience](#wizard-experience)
-    - [IaC - Bicep code files](#iac---bicep-code-files)
-    - [DevOps - GitHub Actions](#devops---github-actions)
-  - [Getting Started](#getting-started)
-    - [Basic](#basic)
-    - [Mature/Advanced](#matureadvanced)
-  - [Guiding Principals](#guiding-principals)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
+<!-- DOCTOC SKIP -->
 # ABC's Azure Kubernetes Service - Wizard/Configurator :D
 
 Building Kubernetes clusters can be hard work!
