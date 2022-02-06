@@ -1,5 +1,5 @@
-repos:
--   repo: https://github.com/thlorenz/doctoc
-    rev: ...  # substitute a tagged version
-    hooks:
-    -   id: doctoc
+-   id: doctoc
+    name: doctoc
+    language: node
+    entry: doctoc
+    types: [markdown]
