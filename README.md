@@ -3,14 +3,26 @@
 
 Building Kubernetes clusters can be hard work!
 
-<!-- ⛔️ MD-MAGIC-EXAMPLE:START (TOC:collapse=true&collapseText=Click to expand) -->
-
+<details>
+<summary>
+<i>Like this? </i>
+<a href="http://www.ironspider.ca/format_text/fontstyles.htm">
+Useful Source</a>
+</summary>
+<p>It's because the details block is html5. If you want to modify it your best bet is using html5. </p>
+<details>
+<summary>
+<i>Like this? </i>
+<a href="http://www.ironspider.ca/format_text/fontstyles.htm">
+Useful Source</a>
+</summary>
+<p>It's because the details block is html5. If you want to modify it your best bet is using html5. </p>
+</details>
+</details>
+<BR>
 The Randstad team focuses on expediting ABC's onboarding of Azure Kubernetes Service workloads using best practices and a flexible templating approach to suit differing requirements.
 
 I have combined guidance provided by the [AKS Secure Baseline](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks), [Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/), [Cloud Adoption Framework](https://azure.microsoft.com/en-gb/cloud-adoption-framework/) and [Enterprise-Scale](https://github.com/Azure/Enterprise-Scale) by providing tangible artifacts to deploy Azure resources from CLI or CI/CD systems.
-
-<!-- START doctoc -->
-<!-- END doctoc -->
 
 ## The 3 Components
 
