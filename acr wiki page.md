@@ -4,7 +4,7 @@ Assorted things to do after the initial deploy.sh has been run successfully:
 
 ## Configure client firewall rules for MCR
 
-If you need to access Microsoft Container Registry (MCR) from behind a firewall, see the guidance to configure [MCR client firewall rules](https://github.com/microsoft/containerregistry/blob/master/client-firewall-rules.md). MCR is the primary registry for all Microsoft-published docker images, such as Windows Server images.
+I f you need to access Microsoft Container Registry (MCR) from behind a firewall, see the guidance to configure [MCR client firewall rules](https://github.com/microsoft/containerregistry/blob/master/client-firewall-rules.md). MCR is the primary registry for all Microsoft-published docker images, such as Windows Server images.
 
 + Learn more about [security groups](https://docs.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview) in an Azure virtual network
 
