@@ -6,6 +6,10 @@ The Randstad team focuses on expediting ABC's onboarding of Azure Kubernetes Ser
 
 I have combined guidance provided by the [AKS Secure Baseline](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks), [Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/), [Cloud Adoption Framework](https://azure.microsoft.com/en-gb/cloud-adoption-framework/) and [Enterprise-Scale](https://github.com/Azure/Enterprise-Scale) by providing tangible artifacts to deploy Azure resources from CLI or CI/CD systems.
 
+<!-- AUTO-GENERATED-CONTENT:START (TOC) -->
+toc will be generated here
+<!-- AUTO-GENERATED-CONTENT:END -->
+
 ## The 3 Components
 
 We will focus equally over 3 areas, configuration, modular templating and CI implementation.
