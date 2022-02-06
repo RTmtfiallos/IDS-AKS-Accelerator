@@ -1,3 +1,33 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [CI Workflows](#ci-workflows)
+  - [Infrastructure as Code pipeline practices](#infrastructure-as-code-pipeline-practices)
+    - [The Foundations](#the-foundations)
+      - [Branch policies](#branch-policies)
+    - [The workflow](#the-workflow)
+      - [One of our workflows](#one-of-our-workflows)
+    - [Pre-deploy Validation](#pre-deploy-validation)
+      - [Bicep Build](#bicep-build)
+      - [PSRule for Azure](#psrule-for-azure)
+      - [Using the AZ CLI to verify](#using-the-az-cli-to-verify)
+    - [Deploying to an Azure Subscription](#deploying-to-an-azure-subscription)
+    - [Post-deploy Validation](#post-deploy-validation)
+      - [Workload smoke tests](#workload-smoke-tests)
+  - [Other actions used in this repo](#other-actions-used-in-this-repo)
+    - [Check Markdown](#check-markdown)
+  - [CI breakdown](#ci-breakdown)
+    - [Validation stage](#validation-stage)
+    - [Deployment stage](#deployment-stage)
+    - [Infrastructure tests](#infrastructure-tests)
+    - [Workload Add](#workload-add)
+    - [Application Tests](#application-tests)
+    - [Cleanup](#cleanup)
+  - [CI Step Highlight](#ci-step-highlight)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # CI Workflows
 
 A number of CI workflows are leveraged in this repo to test the bicep files to ensure quality is high. The patterns and practices used can be replicated into your own IaC pipelines.

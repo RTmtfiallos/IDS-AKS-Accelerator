@@ -45,6 +45,7 @@
     "commander": "^7.2.0",
     "deepmerge": "^4.2.2",
     "find-up": "^5.0.0",
+    "gem": "^2.4.3",
     "globby": "^10.0.2",
     "is-local-path": "^0.1.6",
     "json-alexander": "^0.1.8",

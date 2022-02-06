@@ -1,6 +1,24 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [ABC's Azure Kubernetes Service - Wizard/Configurator :D](#abcs-azure-kubernetes-service---wizardconfigurator-d)
+  - [The 3 Components](#the-3-components)
+    - [Wizard experience](#wizard-experience)
+    - [IaC - Bicep code files](#iac---bicep-code-files)
+    - [DevOps - GitHub Actions](#devops---github-actions)
+  - [Getting Started](#getting-started)
+    - [Basic](#basic)
+    - [Mature/Advanced](#matureadvanced)
+  - [Guiding Principals](#guiding-principals)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # ABC's Azure Kubernetes Service - Wizard/Configurator :D
 
 Building Kubernetes clusters can be hard work!
+
+<!-- ⛔️ MD-MAGIC-EXAMPLE:START (TOC:collapse=true&collapseText=Click to expand) -->
 
 The Randstad team focuses on expediting ABC's onboarding of Azure Kubernetes Service workloads using best practices and a flexible templating approach to suit differing requirements.
 
