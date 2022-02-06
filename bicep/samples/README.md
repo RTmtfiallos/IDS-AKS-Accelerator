@@ -1,4 +1,8 @@
+Here we are, introducing the post. It's going to be great!
+But first: a TOC for easy reference.
+
 <!-- START doctoc -->
+<!-- END doctoc -->
 
 # Samples
 
@@ -8,5 +12,3 @@ Filename | Description
 [SystemPresetExample.bicep](SystemPresetExample.bicep) | The AKS Construction Bicep uses preset configurations for the system pool. Where you wish to deviate from these recommended presets, you can provide your own custom preset. This sample shows how to achieve that.
 [NetworkForByo.bicep](NetworkForByo.bicep) | When using the BYO network configuration you'll usually be deploying to a subscription with a peered virtual network already deployed with the correct subnets. This bicep file bridges the gap where you don't yet have that virtual network, but want to BYO network.
 
-
-<!-- END doctoc -->
