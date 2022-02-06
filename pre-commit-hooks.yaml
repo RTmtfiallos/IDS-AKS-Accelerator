@@ -1,5 +1,5 @@
 repos:
 -   repo: https://github.com/thlorenz/doctoc
-    rev: v1.21.0
+    rev: ...  # substitute a tagged version
     hooks:
     -   id: doctoc
