@@ -50,6 +50,7 @@
     "is-local-path": "^0.1.6",
     "json-alexander": "^0.1.8",
     "mkdirp": "^1.0.4",
+    "pip": "0.0.1",
     "sync-request": "^6.1.0"
   },
   "deprecated": false,
