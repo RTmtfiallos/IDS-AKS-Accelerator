@@ -14,6 +14,87 @@ A single TAB before text with a blank line before and after it  make a non wrapp
 
 <br>
 
+## Tripple layer drill down example, indented
+
+<details>
+<summary>Heading1</summary>
+
+some text
++ <details>
+    <summary>Heading1.1</summary>
+
+    some more text
+    + <details>
+        <summary>Heading1.1.1</summary>
+        even more text
+      </details>
+   </details>
+</details>
+
+<BR>
+
+## Tripple layer drill down, no indent
+
+<details>
+<summary>Heading1</summary>
+some text
+<details>
+<summary>Heading1.1</summary>
+some more text
+<details>
+<summary>Heading1.1.1</summary>
+ even more text
+</details>
+</details>
+</details>
+
+<BR>
+
+## Colored Box with code inside
+
+<details>
+<summary><mark><font color=darkred>Android Node Tree</font></mark>
+</summary>
+<p>
+
+```xml
+
+ <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+
+```
+
+</p>
+</details>
+
+<BR>
+
+----
+
+## Mix & Match
+
+<details markdown="1">
+  <summary markdown="span">This is the summary text, click me to expand</summary>
+
+  This is the detailed text.
+
+  We can still use markdown, but we need to take the additional step of using the `parse_block_html` option as described in the [Mix HTML + Markdown Markup section](#mix-html--markdown-markup).
+
+  You can learn more about expected usage of this approach in the [GitLab UI docs](https://gitlab-org.gitlab.io/gitlab-ui/?path=/story/base-collapse--default) though the solution we use above is specific to usage in markdown.
+</details>
+
+<details markdown="1">
+<summary markdown="span">First level collapsible item</summary>
+
+**Lorem ipsum dolor sit amet...**
+<details markdown="1">
+<summary markdown="span">Second level collapsible item</summary>
+
+*Sed ut perspiciatis unde omnis iste natus...*
+</details>
+</details>
+
+<BR>
+
 ## Simple Disclosure statement example
 <details>
   <summary>System Requirements</summary>
@@ -224,3 +305,23 @@ Markdown will turn this into:
 Automatic links for email addresses work similarly, except that Markdown will also perform a bit of randomized decimal and hex entity-encoding to help obscure your address from address-harvesting spambots. For example, Markdown will turn this:
 
 <address@example.com>
+
+<BR>
+
+<figure class="video_container">
+
+<iframe src="https://docs.google.com/spreadsheets/d/1jAnvYpRmNu8BISIrkYGTLolOTmlCoKLbuHVWzCXJSY4/pubhtml?widget=true&amp;headers=false"></iframe>
+
+</figure>
+
+Output:
+
+
+## Google Presentation Ebedded
+
+<figure class="video_container">
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS_iuMXnp61wlo4amm5nvHr4Ir8VUzisJSBsr7YEL7fKWAiT-9bmehyngtb9TYaFEsFnRokCyIXwsvY/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</figure>
+Output:
+
+<BR>
