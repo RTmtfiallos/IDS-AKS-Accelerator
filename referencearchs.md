@@ -1,14 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-- [Referenced Projects](#referenced-projects)
-  - [Enterprise Scale](#enterprise-scale)
-  - [Enterprise-Scale for AKS](#enterprise-scale-for-aks)
-  - [The AKS Baseline](#the-aks-baseline)
-    - [Deviations from the baseline (and why)](#deviations-from-the-baseline-and-why)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # Referenced Projects
 
 ## Enterprise Scale
