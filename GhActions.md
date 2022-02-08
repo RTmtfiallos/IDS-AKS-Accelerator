@@ -1,32 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-- [CI Workflows](#ci-workflows)
-  - [Infrastructure as Code pipeline practices](#infrastructure-as-code-pipeline-practices)
-    - [The Foundations](#the-foundations)
-      - [Branch policies](#branch-policies)
-    - [The workflow](#the-workflow)
-      - [One of our workflows](#one-of-our-workflows)
-    - [Pre-deploy Validation](#pre-deploy-validation)
-      - [Bicep Build](#bicep-build)
-      - [PSRule for Azure](#psrule-for-azure)
-      - [Using the AZ CLI to verify](#using-the-az-cli-to-verify)
-    - [Deploying to an Azure Subscription](#deploying-to-an-azure-subscription)
-    - [Post-deploy Validation](#post-deploy-validation)
-      - [Workload smoke tests](#workload-smoke-tests)
-  - [Other actions used in this repo](#other-actions-used-in-this-repo)
-    - [Check Markdown](#check-markdown)
-  - [CI breakdown](#ci-breakdown)
-    - [Validation stage](#validation-stage)
-    - [Deployment stage](#deployment-stage)
-    - [Infrastructure tests](#infrastructure-tests)
-    - [Workload Add](#workload-add)
-    - [Application Tests](#application-tests)
-    - [Cleanup](#cleanup)
-  - [CI Step Highlight](#ci-step-highlight)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # CI Workflows
 
 A number of CI workflows are leveraged in this repo to test the bicep files to ensure quality is high. The patterns and practices used can be replicated into your own IaC pipelines.
@@ -159,11 +130,11 @@ Each night the resource groups used for IaC testing are purged of all resources.
 
 Different action workflow files showcase different complexities of CI/CD practices which are summarised below.
 
-1. [Deployment Verification](https://github.com/Azure/Aks-Construction/blob/ed15a8945ab019bd86469c366df85e6d59aeb8ab/.github/workflows/ByoVnetCI.yml#L100)
-1. [Deployment What-If](https://github.com/Azure/Aks-Construction/blob/ed15a8945ab019bd86469c366df85e6d59aeb8ab/.github/workflows/ByoVnetCI.yml#L111)
-1. [Deployment What-If Pester Testing](https://github.com/Azure/Aks-Construction/blob/ed15a8945ab019bd86469c366df85e6d59aeb8ab/.github/workflows/ByoVnetCI.yml#L141)
-1. [Bicep Deployment](https://github.com/Azure/Aks-Construction/blob/ed15a8945ab019bd86469c366df85e6d59aeb8ab/.github/workflows/ByoVnetCI.yml#L189)
-1. [Post Deployment Addons](https://github.com/Azure/Aks-Construction/blob/ed15a8945ab019bd86469c366df85e6d59aeb8ab/.github/workflows/ByoVnetPrivateCI.yml#L194)
-1. [Verify Deployment Configuration](https://github.com/Azure/Aks-Construction/blob/ed15a8945ab019bd86469c366df85e6d59aeb8ab/.github/workflows/ByoVnetCI.yml#L261)
-1. [Deploy Test workload](https://github.com/Azure/Aks-Construction/blob/ed15a8945ab019bd86469c366df85e6d59aeb8ab/.github/workflows/ByoVnetPrivateCI.yml#L230)
-1. [Verify Test workload](https://github.com/Azure/Aks-Construction/blob/ed15a8945ab019bd86469c366df85e6d59aeb8ab/.github/workflows/ByoVnetPrivateCI.yml#L278)
+1. [Deployment Verification](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows/ByoVnetCI.yml#L100)
+1. [Deployment What-If](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows/ByoVnetCI.yml#L111)
+1. [Deployment What-If Pester Testing](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows/ByoVnetCI.yml#L141)
+1. [Bicep Deployment](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows/ByoVnetCI.yml#L189)
+1. [Post Deployment Addons](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows/ByoVnetPrivateCI.yml#L194)
+1. [Verify Deployment Configuration](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows/ByoVnetCI.yml#L261)
+1. [Deploy Test workload](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows/ByoVnetPrivateCI.yml#L230)
+1. [Verify Test workload](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows/ByoVnetPrivateCI.yml#L278)
