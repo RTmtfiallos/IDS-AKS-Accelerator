@@ -2,19 +2,37 @@
 
 Building an Enterprise Ready Kubernetes cluster is extremely complex and can be hard work.
 
-The Randstad team focused on automated and streamlined ABC's onboarding of the Azure Kubernetes Service as a platform as we;; asworkloads using best practices and a flexible templating approach to suit differing requirements.
+The Randstad team focused on developing IaC for AKS that was highly automated, efficient, and streamlined.
 
-I have combined guidance provided by the [AzOps-Accelerator](https://github.com/RTmtfiallos/AzOps-Accelerator), [AKS Secure Baseline](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks), [Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/), [Cloud Adoption Framework](https://azure.microsoft.com/en-gb/cloud-adoption-framework/), [the PSRule for Azure Reference](https://azure.github.io/PSRule.Rules.Azure/en/rules/module/), and [Enterprise-Scale](https://github.com/Azure/Enterprise-Scale) by providing tangible artifacts to deploy Azure resources from CLI or CI/CD systems.
+ABC will be able to quickly deploy the Azure Kubernetes Service as well as container workloads, using tested/proven best practices and a flexible templating approach to suit differing business and IT requirements.
 
-## The 3 Components
+I have combined guidance, automated at all costs - wherever possible, and have taken the best of what the projects offered.
 
-We will focus equally over 3 areas, configuration, modular templating and CI implementation.
+[AzOps-Accelerator](https://github.com/RTmtfiallos/AzOps-Accelerator), [AKS Secure Baseline](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks), [Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/), [Cloud Adoption Framework](https://azure.microsoft.com/en-gb/cloud-adoption-framework/), [the PSRule for Azure Reference](https://azure.github.io/PSRule.Rules.Azure/en/rules/module/), and [Enterprise-Scale](https://github.com/Azure/Enterprise-Scale) by providing tangible artifacts to deploy Azure resources from CLI or CI/CD systems.
+
+## The 3 Main Components & Building Blocks
+
+The Randstad team will focus equally over the following 3 areas:
 
 ![project component areas](docassets/AKSBicepComponents.png)
 
+* AKS Configuration
+  * Basic
+  * Advanced
+  * BYO VNet
+  * Private
+  * Greenfield
+  * Brownfield
+  * Enterprise-Scale
+* Modular templating
+  * Develop React App Wizard that outputsgenerates parameters that are suoolied to compiled Bicep
+*
+* CI implementation.
+
+
 ### Wizard experience
 
-To help guide your initial AKS configuration and fully automate the deployment of the Dev & Production ABC AKS cluster, use the AKS [Deployment Helper](https://rtmtfiallos.github.io/ABC-AKS/helper/public/), which will provide a set of parameters and scripts to make deployment simple and fully automated. It uses several preset configurations to guide configuration decisions.
+To help guide your initial AKS configuration and fully automate the deployment of the Dev & Production ABC AKS cluster, use the developed and highly customizeable [RT AKS Deployment Helper](https://rtmtfiallos.github.io/ABC-AKS/helper/public/), which will provide a set of parameters and scripts to make deployment simple and fully automated. It uses several preset configurations to guide configuration decisions.
 
 The deployment helper provides links to the official Microsoft documentation to help provide additional context for each feature.
 
@@ -26,7 +44,7 @@ IaC (Infrastructure as Code) code files have been modularised into their compone
 
 Releases are used to version the bicep code files, they can be leveraged directly for use in your project or you can opt to Fork the repo if you prefer.
 
-
+The following modules have been commited to the rtdeployed for this project and suiatble to immediate reuse.
 
 ### DevOps - GitHub Actions
 
@@ -41,8 +59,6 @@ A number of [GitHub actions](https://github.com/RTmtfiallos/ABC-AKS/tree/main/.g
 | Private cluster | [ByoVnetPrivateCI.yml](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows/ByoVnetPrivateCI.yml) | [ESLZ Byo private vnet](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows_dep/AksDeploy-ByoVnetPrivate.parameters.json) | [![ByoVNetPrivateCI](https://github.com/Azure/Aks-Construction/actions/workflows/ByoVnetPrivateCI.yml/badge.svg)](https://github.com/Azure/Aks-Construction/actions/workflows/ByoVnetPrivateCI.yml) | As above, but with a focus on private networking                                     |
 
 For a more in depth look at the GitHub Actions I created, which steps are performed and the different CI practices they demonstrate, please refer to [this page](https://github.com/RTmtfiallos/ABC-AKS/GhActions.md).
-
-I have already begun work on an Azure DevOps pipeline as opposed to leveraging GitHub.
 
 ## Getting Started
 
