@@ -1,29 +1,10 @@
-<!-- DOCTOC SKIP -->
+# ABC's Azure Kubernetes Service - Wizard/Configurator
 
-# ABC's Azure Kubernetes Service - Wizard/Configurator :D
+Building an Enterprise Ready Kubernetes cluster is extremely complex and can be hard work.
 
-Building Kubernetes clusters can be hard work!
+The Randstad team focused on automated and streamlined ABC's onboarding of the Azure Kubernetes Service as a platform as we;; asworkloads using best practices and a flexible templating approach to suit differing requirements.
 
-<details>
-<summary>
-<i>Like this? </i>
-<a href="http://www.ironspider.ca/format_text/fontstyles.htm">
-Useful Source</a>
-</summary>
-<p>It's because the details block is html5. If you want to modify it your best bet is using html5. </p>
-<details>
-<summary>
-<i>Like this? </i>
-<a href="http://www.ironspider.ca/format_text/fontstyles.htm">
-Useful Source</a>
-</summary>
-<p>It's because the details block is html5. If you want to modify it your best bet is using html5. </p>
-</details>
-</details>
-<BR>
-The Randstad team focuses on expediting ABC's onboarding of Azure Kubernetes Service workloads using best practices and a flexible templating approach to suit differing requirements.
-
-I have combined guidance provided by the [AzOps-Accelerator](https://github.com/RTmtfiallos/AzOps-Accelerator), [AKS Secure Baseline](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks), [Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/), [Cloud Adoption Framework](https://azure.microsoft.com/en-gb/cloud-adoption-framework/) and [Enterprise-Scale](https://github.com/Azure/Enterprise-Scale) by providing tangible artifacts to deploy Azure resources from CLI or CI/CD systems.
+I have combined guidance provided by the [AzOps-Accelerator](https://github.com/RTmtfiallos/AzOps-Accelerator), [AKS Secure Baseline](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks), [Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/), [Cloud Adoption Framework](https://azure.microsoft.com/en-gb/cloud-adoption-framework/), [the PSRule for Azure Reference](https://azure.github.io/PSRule.Rules.Azure/en/rules/module/), and [Enterprise-Scale](https://github.com/Azure/Enterprise-Scale) by providing tangible artifacts to deploy Azure resources from CLI or CI/CD systems.
 
 ## The 3 Components
 
@@ -33,11 +14,11 @@ We will focus equally over 3 areas, configuration, modular templating and CI imp
 
 ### Wizard experience
 
-To help guide your initial AKS configuration, use the [Deployment Helper](https://azure.github.io/Aks-Construction/), which will provide a set of parameters and scripts to make deployment simple. It uses several preset configurations to guide configuration decisions.
+To help guide your initial AKS configuration and fully automate the deployment of your Dev & Production ABC AKS cluster, use the [Deployment Helper]([PSRule for Azure Reference](https://azure.github.io/PSRule.Rules.Azure/en/rules/module/)/), which will provide a set of parameters and scripts to make deployment simple. It uses several preset configurations to guide configuration decisions.
 
 The deployment helper provides links to the official Microsoft documentation to help provide additional context for each feature.
 
-[![preview screenshot of the helper wizard](helper_preview_es.png)](https://azure.github.io/Aks-Construction/)
+[![preview screenshot of the helper wizard](helper_preview_es.png)](https://rtmtfiallos.github.io/ABC-AKS/helper/public/)
 
 ### IaC - Bicep code files
 

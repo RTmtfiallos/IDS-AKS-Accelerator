@@ -4,7 +4,7 @@
 
 Enterprise Scale provides prescriptive guidance based on authoritative design for the Azure platform as a whole.
 
-The [Deployment Helper Wizard](https://azure.github.io/Aks-Construction/?default=es) has an Enterprise-Scale lens, with preset configurations for each landing zone area.
+The [Deployment Helper Wizard](https://rtmtfiallos.github.io/ABC-AKS/helper/public/) has an Enterprise-Scale lens, with preset configurations for each landing zone area.
 
 ## Enterprise-Scale for AKS
 
@@ -12,15 +12,17 @@ This is the [parent project](https://github.com/Azure/Enterprise-Scale-for-AKS) 
 
 ## The AKS Baseline
 
-The AKS Construction bicep code is based on the architecture of the AKS Baseline.
+The AKS Construction bicep code is based on the architecture of the AKS Baseline, the Well Architected Framework.
+It has been highly customized by Randstad to ensure quality deployments witht the highest degree of confidence os success.
+The end result is a fully validated infrastructe before it has been deployed.  *'Shifting-Left* as much as possible, ensuring AKS is truly 'Well Archited' and fully 'Secure'.
 
 The [AKS Baseline](https://docs.microsoft.com/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks) is a reference architecture and has a number of additional, related reference architectures that build on the base to show different patterns such as [multi-region](https://docs.microsoft.com/azure/architecture/reference-architectures/containers/aks-multi-region/aks-multi-cluster) or [PCI-DSS 3.2.1 compliance](https://docs.microsoft.com/azure/architecture/reference-architectures/containers/aks-pci/aks-pci-intro).
 
 For each of the documented architectures there is an accompanying reference implementation that includes deployment instructions and ARM templates for the cluster infrastructure. The templates showcases an end to end deployment of all the infrastructure as well as a sample workload. The ARM templates by design take a minimal amount of parameters, with much configuration built in to the resources directly. This is great from a learning perspective, and as part of making the template your own.
 
-Much of the code and configuration in this project is based off the work in the AKS Baseline, the philosophy however is different. This project aims to converge on a single IaC codebase, and vary behaviour through parameters, parameters which use *good defaults* to minimise needing to provide too many parameter values. The AKS Baseline covers much of the documentation and practices, and this project focuses on the [implementation experience](https://azure.github.io/Aks-Construction/) and [automation samples](GhActions.md).
+Much of the code and configuration in this project is based off the work in the AKS Baseline, the philosophy however is different. This project aims to converge on a single IaC codebase, and vary behaviour through parameters, parameters which use *good defaults* to minimise needing to provide too many parameter values. The AKS Baseline covers much of the documentation and practices, and this project focuses on the [implementation experience](https://rtmtfiallos.github.io/ABC-AKS/helper/public/) and [automation samples](GhActions.md).
 
-When the AKS Baseline is updated, changes are evaluated and rolled into this project. See [here](https://github.com/Azure/Aks-Construction/issues?q=label%3ASecure-Baseline) for a list of tagged PRs.
+When the AKS Baseline is updated, changes are evaluated and rolled into this project. See [here](https://rtmtfiallos.github.io/ABC-AKS/issues?q=label%3ASecure-Baseline) for a list of tagged PRs.
 
 ### Deviations from the baseline (and why)
 
