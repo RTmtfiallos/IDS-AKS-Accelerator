@@ -1,4 +1,5 @@
 <!-- DOCTOC SKIP -->
+
 # ABC's Azure Kubernetes Service - Wizard/Configurator :D
 
 Building Kubernetes clusters can be hard work!
@@ -22,7 +23,7 @@ Useful Source</a>
 <BR>
 The Randstad team focuses on expediting ABC's onboarding of Azure Kubernetes Service workloads using best practices and a flexible templating approach to suit differing requirements.
 
-I have combined guidance provided by the [AKS Secure Baseline](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks), [Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/), [Cloud Adoption Framework](https://azure.microsoft.com/en-gb/cloud-adoption-framework/) and [Enterprise-Scale](https://github.com/Azure/Enterprise-Scale) by providing tangible artifacts to deploy Azure resources from CLI or CI/CD systems.
+I have combined guidance provided by the [AzOps-Accelerator](https://github.com/RTmtfiallos/AzOps-Accelerator), [AKS Secure Baseline](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks), [Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/), [Cloud Adoption Framework](https://azure.microsoft.com/en-gb/cloud-adoption-framework/) and [Enterprise-Scale](https://github.com/Azure/Enterprise-Scale) by providing tangible artifacts to deploy Azure resources from CLI or CI/CD systems.
 
 ## The 3 Components
 
@@ -49,11 +50,12 @@ Releases are used to version the bicep code files, they can be leveraged directl
 A number of [GitHub actions](https://github.com/Azure/Aks-Construction/tree/main/.github/workflows) are used in the repo that run on push/pr/schedules. These can be copied into your own repo and customised for your CI/CD pipeline. A robust deployment pipeline is essential when coordinating the deployment of multiple Azure services that work together, additionally there is configuration that cannot be set in the template and that needs to be automated (and tested) consistently.
 ![preview screenshot of the helper wizard](docassets/ghactionworkflow.jpg)
 
-CI Name | Actions Workflow | Parameter file | CI Status | Notes
-|--------|--------|--------|-----------|------|
-| Starter cluster | [StandardCI.yml](https://github.com/Azure/Aks-Construction/blob/main/.github/workflows/StandardCI.yml) | [ESLZ Sandbox](.github/workflows_dep/AksDeploy-Basic.parameters.json) | [![AksStandardCI](https://github.com/Azure/Aks-Construction/actions/workflows/StandardCI.yml/badge.svg)](https://github.com/Azure/Aks-Construction/actions/workflows/StandardCI.yml) | A simple deployment example, good for first time users of this project to start with  |
-| BYO Vnet | [ByoVnetCI.yml](https://github.com/Azure/Aks-Construction/blob/main/.github/workflows/ByoVnetCI.yml) | [ESLZ Byo peered vnet](.github/workflows_dep/AksDeploy-ByoVnet.parameters.json) | [![ByoVnetCI](https://github.com/Azure/Aks-Construction/actions/workflows/ByoVnetCI.yml/badge.svg?branch=main)](https://github.com/Azure/Aks-Construction/actions/workflows/ByoVnetCI.yml) | Comprehensive IaC flow deploying multiple smoke-test apps |
-| Private cluster | [ByoVnetPrivateCI.yml](https://github.com/Azure/Aks-Construction/blob/main/.github/workflows/ByoVnetPrivateCI.yml) | [ESLZ Byo private vnet](.github/workflows_dep/AksDeploy-ByoVnetPrivate.parameters.json) | [![ByoVNetPrivateCI](https://github.com/Azure/Aks-Construction/actions/workflows/ByoVnetPrivateCI.yml/badge.svg)](https://github.com/Azure/Aks-Construction/actions/workflows/ByoVnetPrivateCI.yml)| As above, but with a focus on private networking |
+
+| CI Name         | Actions Workflow                                                                                                   | Parameter file                                                                          | CI Status                                                                                                                                                                                           | Notes                                                                                |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Starter cluster | [StandardCI.yml](https://github.com/Azure/Aks-Construction/blob/main/.github/workflows/StandardCI.yml)             | [ESLZ Sandbox](.github/workflows_dep/AksDeploy-Basic.parameters.json)                   | [![AksStandardCI](https://github.com/Azure/Aks-Construction/actions/workflows/StandardCI.yml/badge.svg)](https://github.com/Azure/Aks-Construction/actions/workflows/StandardCI.yml)                | A simple deployment example, good for first time users of this project to start with |
+| BYO Vnet        | [ByoVnetCI.yml](https://github.com/Azure/Aks-Construction/blob/main/.github/workflows/ByoVnetCI.yml)               | [ESLZ Byo peered vnet](.github/workflows_dep/AksDeploy-ByoVnet.parameters.json)         | [![ByoVnetCI](https://github.com/Azure/Aks-Construction/actions/workflows/ByoVnetCI.yml/badge.svg?branch=main)](https://github.com/Azure/Aks-Construction/actions/workflows/ByoVnetCI.yml)          | Comprehensive IaC flow deploying multiple smoke-test apps                            |
+| Private cluster | [ByoVnetPrivateCI.yml](https://github.com/Azure/Aks-Construction/blob/main/.github/workflows/ByoVnetPrivateCI.yml) | [ESLZ Byo private vnet](.github/workflows_dep/AksDeploy-ByoVnetPrivate.parameters.json) | [![ByoVNetPrivateCI](https://github.com/Azure/Aks-Construction/actions/workflows/ByoVnetPrivateCI.yml/badge.svg)](https://github.com/Azure/Aks-Construction/actions/workflows/ByoVnetPrivateCI.yml) | As above, but with a focus on private networking                                     |
 
 For a more in depth look at the GitHub Actions I created, which steps are performed and the different CI practices they demonstrate, please refer to [this page](GhActions.md).
 
