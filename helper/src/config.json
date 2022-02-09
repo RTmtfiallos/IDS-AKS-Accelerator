@@ -493,9 +493,9 @@
                     },
                     "imageSrc": "./Entscale-sandbox.png",
                     "author": {
-                        "name": "Gordon Byers",
-                        "initials": "GB",
-                        "status": "Updated March, 2021"
+                        "name": "Matthew Fiallos",
+                        "initials": "MF",
+                        "status": "Updated January, 2021"
                     },
                     "values": {
                         "cluster": {
@@ -577,9 +577,9 @@
                     },
                     "imageSrc": "./Entscale-corp.png",
                     "author": {
-                        "name": "Gordon Byers",
+                        "name": "Matthew Fiallos",
                         "initials": "GB",
-                        "status": "Updated March, 2021"
+                        "status": "Updated Janurary, 2021"
                     },
                     "values": {
                         "cluster": {
@@ -659,9 +659,9 @@
                     },
                     "imageSrc": "./Entscale-online.png",
                     "author": {
-                        "name": "Gordon Byers",
-                        "initials": "GB",
-                        "status": "Updated March, 2021"
+                        "name": "Matthew Fiallos",
+                        "initials": "MF",
+                        "status": "Updated Juanary, 2021"
                     },
                     "values": {
                         "cluster": {
