@@ -23,7 +23,7 @@ As a result, ABC is able to quickly deploy the Azure Kubernetes Service as well 
 <BR>
 
 <details>
-<summary> # Click here for details on the above frameworks, references, & architectures</summary>
+<summary> Click here for details on the above frameworks, references, & architectures</summary>
 <details>
 <summary>AzOps-Accelerator</summary>
 '''* Azure CLI
@@ -60,6 +60,7 @@ As a result, ABC is able to quickly deploy the Azure Kubernetes Service as well 
   * Helm/Tiller
 </details>
 </details>
+
 ## The 3 Main Components & Building Blocks
 
 <p style="margin-left:5%; margin-right:10%; color:blue">The Randstad team will focus equally over the following 3 areas:<P>
