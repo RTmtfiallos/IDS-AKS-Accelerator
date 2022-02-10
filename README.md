@@ -8,11 +8,11 @@ The Randstad project team focused on developing a simple, light-weight, and flex
 
 ### Critical requirements and success factors
 
-* Simple to use and understand
-* Delivers repeatble results and expected infrastructre
-* Has flexible configration options that can be easily modified to include new features/patterns/frameworks in the future
-* Minimize post deployment AKS configurtion needs
-* Can be fully automated and include testing, is effcient, and streamlined.
+>* Simple to use and understand
+>* Delivers repeatble results and expected infrastructre
+>* Has flexible configration options that can be easily modified to include new features/patterns/frameworks in the future
+>* Minimize post deployment AKS configurtion needs
+>* Can be fully automated and include testing, is effcient, and streamlined.
 
 <BR>
 
