@@ -2,13 +2,17 @@
 
 Deploying an Enterprise ready Kubernetes cluster is extremely complex and can be challenging. It can be a nightmare if you add in finiky ARM Templates, syntax errors, and potentially hundreds of parameters to get just exactly right.  So much time can be wasted and frustration builds.
 
-The Randstad team focused on developing a simple, light-weight, and flexible solution that would streamline AKS configration and deployments.
+## How Randstad helped the ABC Data Science team
+
+The Randstad project team focused on developing a simple, light-weight, and flexible solution that would streamline AKS configration and deployments.
+
+### Critical requirements and success factors
 
 * Simple to use and understand
 * Delivers repeatble results and expected infrastructre
 * Has flexible configration options that can be easily modified to include new features/patterns/frameworks in the future
 * Minimize post deployment AKS configurtion needs
-* Can be fully automated and include testing and, effcient, and streamlined.
+* Can be fully automated and include testing, is effcient, and streamlined.
 
 <BR>
 
