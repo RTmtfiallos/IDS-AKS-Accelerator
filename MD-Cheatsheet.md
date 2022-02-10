@@ -127,17 +127,6 @@ some more text
 
 ## Toggle Example
 
-<details>
-<summary>Bastion Pre-reqiusites</summary>
-
-* Azure CLI
-* Helm/Tiller
-* Docker
-* kubectl
-
-</details>
-
-<BR>
 
 ## Spacing & Indent example example
 
