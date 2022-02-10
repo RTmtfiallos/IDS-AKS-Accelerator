@@ -1,6 +1,6 @@
-# Azure Kubernetes Service - Deploy/Configurator
+# AKS Deploy Helper / Configurator
 
-Building an Enterprise ready Kubernetes cluster is extremely complex and can be hard work. If you add in finiky ARM Templates, syntax errors, and potentially hundreds of parameters to get just exactly right it's a nightmare.  So much time can be wasted and frustration builds.
+Building an Enterprise ready Kubernetes cluster is extremely complex and can be challenging. If you add in finiky ARM Templates, syntax errors, and potentially hundreds of parameters to get just exactly right it's a nightmare.  So much time can be wasted and frustration builds.
 
 The Randstad team focused on developing an IaC solution for AKS that meets the ABC requirements and is:
 * Simple to use and understand
