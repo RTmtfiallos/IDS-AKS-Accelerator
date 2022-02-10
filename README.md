@@ -1,21 +1,65 @@
-# ABC's Azure Kubernetes Service - Wizard/Configurator
+# Azure Kubernetes Service - Deploy/Configurator
 
-Building an Enterprise ready Kubernetes cluster is extremely complex and can be hard work.
+Building an Enterprise ready Kubernetes cluster is extremely complex and can be hard work. If you add in finiky ARM Templates, syntax errors, and potentially hundreds of parameters to get just exactly right it's a nightmare.  So much time can be wasted and frustration builds.
 
-The Randstad team focused on developing IaC for AKS that was highly automated, efficient, and streamlined.
-
-ABC will be able to quickly deploy the Azure Kubernetes Service as well as container workloads, using tested/proven best practices and a flexible templating approach to suit differing business and IT requirements.
+The Randstad team focused on developing an IaC solution for AKS that meets the ABC requirements and is:
+* Simple to use and understand
+* Delivers repeatble results and expected infrastructre
+* Has flexible configration options that can be easily modified to include new features/patterns/frameworks in the future
+* Minimize post deployment AKS configurtion needs
+* Can be fully automated, effcient, and streamlined
 
 <BR>
 
-> I have combined guidance, automated at all costs - wherever possible, and have taken the best of what the community projects had to offer.
+As a result, ABC is able to quickly deploy the Azure Kubernetes Service as well as container workloads, using tested/proven best practices and a flexible templating approach to address differing business and IT requirements.
 
-> Randstad leveraged the following Architecural approached, framworks, best practices, and controls to ensure an optimal AKS cluster deployment as well as being very secure
+<BR>
+
+> Randstad I have combined guidance, automated at all costs - wherever possible, and have taken the best of what the community projects had to offer.
+
+> Randstad leveraged the following Architecural approaches, frameworks, best practices, and security controls to ensure an optimal AKS cluster deployment as well as being very secure
 
 > [AzOps-Accelerator](https://github.com/RTmtfiallos/AzOps-Accelerator), [AKS Secure Baseline](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks) (Private), [Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/), [Cloud Adoption Framework](https://azure.microsoft.com/en-gb/cloud-adoption-framework/), [the PSRule for Azure Reference](https://azure.github.io/PSRule.Rules.Azure/en/rules/module/), [Enterprise-Scale](https://github.com/Azure/Enterprise-Scale) and Enterprise Scale AKS by providing tangible artifacts to deploy Azure resources from CLI or CI/CD systems.
-
 <BR>
 
+<details>
+<summary> # Click here for details on the above frameworks, references, & architectures</summary>
+<details>
+<summary>AzOps-Accelerator</summary>
+'''* Azure CLI
+* Helm/Tiller
+</details>
+<details>
+<summary>AKS Secure Baseline (Private Clister)</summary>
+'''* Azure CLI
+* Helm/Tiller
+</details>
+<details>
+<summary>Well Architected Framework</summary>
+'''* Azure CLI
+* Helm/Tiller
+</details>
+<details>
+<summary>Cloud Adoption Framework</summary>
+'''* Azure CLI
+* Helm/Tiller
+</details>
+<details>
+<summary>PSRule for Azure Reference</summary>
+'''* Azure CLI
+* Helm/Tiller
+</details>
+<details>
+<summary>Enterprise Scale</summary>
+'''* Azure CLI
+* Helm/Tiller
+</details>
+<details>
+<summary>Enteprise Scale for AZS</summary>
+'''* Azure CLI
+  * Helm/Tiller
+</details>
+</details>
 ## The 3 Main Components & Building Blocks
 
 <p style="margin-left:5%; margin-right:10%; color:blue">The Randstad team will focus equally over the following 3 areas:<P>
