@@ -1,5 +1,7 @@
 const fs = require('fs')
 const path = require('path')
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
 const markdownMagic = require('../index')
 // const markdownMagic = require('markdown-magic')
 

@@ -1,40 +1,42 @@
 # ABC's Azure Kubernetes Service - Wizard/Configurator
 
-Building an Enterprise Ready Kubernetes cluster is extremely complex and can be hard work.
+Building an Enterprise ready Kubernetes cluster is extremely complex and can be hard work.
 
 The Randstad team focused on developing IaC for AKS that was highly automated, efficient, and streamlined.
 
 ABC will be able to quickly deploy the Azure Kubernetes Service as well as container workloads, using tested/proven best practices and a flexible templating approach to suit differing business and IT requirements.
 
-I have combined guidance, automated at all costs - wherever possible, and have taken the best of what the projects offered.
+<BR>
 
-[AzOps-Accelerator](https://github.com/RTmtfiallos/AzOps-Accelerator), [AKS Secure Baseline](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks), [Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/), [Cloud Adoption Framework](https://azure.microsoft.com/en-gb/cloud-adoption-framework/), [the PSRule for Azure Reference](https://azure.github.io/PSRule.Rules.Azure/en/rules/module/), and [Enterprise-Scale](https://github.com/Azure/Enterprise-Scale) by providing tangible artifacts to deploy Azure resources from CLI or CI/CD systems.
+> I have combined guidance, automated at all costs - wherever possible, and have taken the best of what the community projects had to offer.
+
+> Randstad leveraged the following Architecural approached, framworks, best practices, and controls to ensure an optimal AKS cluster deployment as well as being very secure
+
+> [AzOps-Accelerator](https://github.com/RTmtfiallos/AzOps-Accelerator), [AKS Secure Baseline](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks) (Private), [Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/), [Cloud Adoption Framework](https://azure.microsoft.com/en-gb/cloud-adoption-framework/), [the PSRule for Azure Reference](https://azure.github.io/PSRule.Rules.Azure/en/rules/module/), [Enterprise-Scale](https://github.com/Azure/Enterprise-Scale) and Enterprise Scale AKS by providing tangible artifacts to deploy Azure resources from CLI or CI/CD systems.
+
+<BR>
 
 ## The 3 Main Components & Building Blocks
 
-The Randstad team will focus equally over the following 3 areas:
+<p style="margin-left:5%; margin-right:10%; color:blue">The Randstad team will focus equally over the following 3 areas:<P>
 
 ![project component areas](docassets/AKSBicepComponents.png)
-
-* AKS Configuration
-  * Basic
-  * Advanced
-  * BYO VNet
-  * Private
-  * Greenfield
-  * Brownfield
-  * Enterprise-Scale
-* Modular templating
-  * Develop React App Wizard that outputsgenerates parameters that are suoolied to compiled Bicep
-*
-* CI implementation.
 
 
 ### Wizard experience
 
-To help guide your initial AKS configuration and fully automate the deployment of the Dev & Production ABC AKS cluster, use the developed and highly customizeable [RT AKS Deployment Helper](https://rtmtfiallos.github.io/ABC-AKS/helper/public/), which will provide a set of parameters and scripts to make deployment simple and fully automated. It uses several preset configurations to guide configuration decisions.
+To help guide ABC's initial AKS configuration and fully automate the deployment of the Dev & Production ABC AKS cluster, use the developed and highly customizeable [RT AKS Deployment Helper](https://rtmtfiallos.github.io/ABC-AKS/helper/public/), which will provide a set of parameters and scripts to make deployment simple and fully automated. It uses several preset configurations, ptterns, and building blocks to guide configuration decisions.
+
+If requirements change, or if there is a need for another AKS Clusterx you can simply ceate a new set of deployment files to use whenever needed.
+
+We've broken it down to 2 sets of principles to help balance flexibility, function, and costs; **Operations & Security Principles.**
+
+
+![](assets/20220209_210726_helper1.png)
 
 The deployment helper provides links to the official Microsoft documentation to help provide additional context for each feature.
+
+
 
 [![preview screenshot of the helper wizard](helper_preview_es.png)](https://rtmtfiallos.github.io/ABC-AKS/helper/public/)
 
