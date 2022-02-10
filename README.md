@@ -1,3 +1,5 @@
+<img align="left" width="100" height="100" src="https://docs.microsoft.com/answers/topics/25346/icon.html?t=168484">
+
 # AKS Deploy Helper / Configurator
 
 Deploying an Enterprise ready Kubernetes cluster is extremely complex and can be challenging. It can be a nightmare if you add in finiky ARM Templates, syntax errors, and potentially hundreds of parameters to get just exactly right.  So much time can be wasted and frustration builds.
@@ -86,7 +88,6 @@ We've broken it down to 2 sets of principles to help balance flexibility, functi
 ![](assets/20220209_210726_helper1.png)
 
 The deployment helper provides links to the official Microsoft documentation to help provide additional context for each feature.
-
 
 ### IaC - Bicep code files
 
