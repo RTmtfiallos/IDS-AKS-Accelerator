@@ -6,6 +6,7 @@
 <img align="left" width="100" height="100" src="http://www.fillmurray.com/100/100">
 
 This is the code you need to align images to the left:
+
 ```
 <img align="left" width="100" height="100" src="http://www.fillmurray.com/100/100">
 ```
@@ -17,6 +18,7 @@ This is the code you need to align images to the left:
 <img align="right" width="100" height="100" src="http://www.fillmurray.com/100/100">
 
 This is the code you need to align images to the right:
+
 ```
 <img align="right" width="100" height="100" src="http://www.fillmurray.com/100/100">
 ```
@@ -41,7 +43,6 @@ This is the code you need to align images to the right:
 
 If you like this, you might enjoy [markdown-magic](https://github.com/davidwells/markdown-magic). I built it to automatically format markdown files and allow folks to sync docs/code/data from external sources.
 
-
 ## No wrapping line of code with pretext example
 
 How do you put a tab space in markdown?
@@ -64,15 +65,16 @@ A single TAB before text with a blank line before and after it  make a non wrapp
 <summary>Heading1</summary>
 
 some text
-+ <details>
+* <details>
     <summary>Heading1.1</summary>
 
     some more text
-    + <details>
+  * <details>
         <summary>Heading1.1.1</summary>
         even more text
       </details>
    </details>
+
 </details>
 
 <BR>
@@ -140,6 +142,7 @@ some more text
 <BR>
 
 ## Simple Disclosure statement example
+
 <details>
   <summary>System Requirements</summary>
   <p>Requires a computer running an operating system. The computer
@@ -162,7 +165,6 @@ some more text
 
 <BR>
 
-
 ## Toggle Example
 
 <details><summary>Toggle me!</summary>Peek a boo!</details></details>
@@ -170,7 +172,6 @@ some more text
 <br>
 
 ## Toggle Example
-
 
 ## Spacing & Indent example example
 
@@ -194,10 +195,10 @@ Remember that blank lines are needed before/after a section of markdown that is 
 
 <BR>
 
-> ## This is a header example like in an SOP.
+> ## This is a header example like in an SOP
 >
-> 1.   This is the first list item.
-> 2.   This is the second list item.
+> 1. This is the first list item.
+> 2. This is the second list item.
 >
 > Here's some example code:
 >
@@ -216,15 +217,15 @@ id sem consectetuer libero luctus adipiscing.
 
 ## List Examples
 
-*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+* Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
     Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
     viverra nec, fringilla in, laoreet vitae, risus.
-*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+* Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
     Suspendisse id sem consectetuer libero luctus adipiscing.
 
     <BR>
 
-1.  This is a list item with two paragraphs. Lorem ipsum dolor
+1. This is a list item with two paragraphs. Lorem ipsum dolor
     sit amet, consectetuer adipiscing elit. Aliquam hendrerit
     mi posuere lectus.
 
@@ -232,18 +233,18 @@ id sem consectetuer libero luctus adipiscing.
     vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
     sit amet velit.
 
-2.  Suspendisse id sem consectetuer libero luctus adipiscing.
+2. Suspendisse id sem consectetuer libero luctus adipiscing.
 
 <BR>
 
-*   A list item with a blockquote:
+* A list item with a blockquote:
 
     > This is a blockquote
     > inside a list item.
 
     <BR>
 
-*   A list item with a code block:
+* A list item with a code block:
 
         <code goes here>
 
@@ -289,6 +290,7 @@ I get 10 times more traffic from [Google][] than from
 <BR>
 
 # Code
+
 To indicate a span of code, wrap it with backtick quotes (`). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph. For example:
 
 Use the `printf()` function.
@@ -333,7 +335,7 @@ Markdown supports a shortcut style for creating "automatic" links for URLs and e
 
 Markdown will turn this into:
 
-<a href="http://example.com/">http://example.com/</a>
+<a href="<http://example.com/>">http://example.com/</a>
 
 Automatic links for email addresses work similarly, except that Markdown will also perform a bit of randomized decimal and hex entity-encoding to help obscure your address from address-harvesting spambots. For example, Markdown will turn this:
 
@@ -348,7 +350,6 @@ Automatic links for email addresses work similarly, except that Markdown will al
 </figure>
 
 Output:
-
 
 ## Google Presentation Ebedded
 
