@@ -10,11 +10,37 @@ The Randstad project team focused on developing a simple, secure,  light-weight,
 
 ### Critical requirements and success factors
 
-> * Simple to use and understand
-> * Delivers repeatble results and expected infrastructre
-> * Has flexible configration options that can be easily modified to include new features/patterns/frameworks in the future
-> * Minimize post deployment AKS configurtion needs
-> * Can be fully automated and include testing, is effcient, and streamlined.
+ * Simple to use and understand
+ * Delivers repeatble results and expected infrastructre
+ * Has flexible configration options that can be easily modified to include new features/patterns/frameworks in the future
+ * Minimize post deployment AKS configurtion needs
+ * Can be fully automated and include testing, is effcient, and streamlined.
+
+
+### Guiding Principals
+
+The guiding principal we have with is to focus on the the *downstream use* of the the parameters. As such, these are our specific practices.
+
+1. Deploy all components through a single, modular, idempotent bicep template Converge on a single bicep template, which can easily be consumed as a module
+2. Provide best-practice defaults, then use parameters for different environment deployments
+3. Minimise "manual" steps for ease of automation
+4. Maintain quality through validation & CI/CD pipelines that also serve as working samples/docs
+5. Focus on AKS and supporting services, linking to other repos to solve; Demo apps / Developer workstations / Jumpboxes / CI Build Agents / Certificate Authorities
+
+
+Randstad leveraged the following Architectural approaches, frameworks, best practices, and security controls to ensure an optimal AKS cluster design and deployment as well as being very secure
+
+* [AzOps-Accelerator](https://github.com/RTmtfiallos/AzOps-Accelerator)
+  * Used in Azure DevOps and GitHub to baseline, pull, push, & validate Azure resources such as policyDefinitions, policyAssignments and roleAssignments.
+* [PSRule for Azure]()
+*
+* [AKS Secure Baseline {Private Cluster}](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks)
+* [Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/)
+* [Cloud Adoption Framework](https://azure.microsoft.com/en-gb/cloud-adoption-framework/)
+* [PSRule for Azure Reference](https://azure.github.io/PSRule.Rules.Azure/en/rules/module/)
+* [Enterprise-Scale](https://github.com/Azure/Enterprise-Scale)
+* Eterprise Scalefor AKS
+* Azure Policy for AKS
 
 <BR>
 
@@ -22,58 +48,7 @@ As a result, ABC is able to quickly deploy the Azure Kubernetes Service as well 
 
 <BR>
 
-> Randstad I have combined guidance, automated at all costs - wherever possible, and have taken the best of what the community projects had to offer.
-
-> Randstad leveraged the following Architecural approaches, frameworks, best practices, and security controls to ensure an optimal AKS cluster deployment as well as being very secure
-
-> [AzOps-Accelerator](https://github.com/RTmtfiallos/AzOps-Accelerator), [AKS Secure Baseline](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks) (Private), [Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/), [Cloud Adoption Framework](https://azure.microsoft.com/en-gb/cloud-adoption-framework/), [the PSRule for Azure Reference](https://azure.github.io/PSRule.Rules.Azure/en/rules/module/), [Enterprise-Scale](https://github.com/Azure/Enterprise-Scale) and Enterprise Scale AKS by providing tangible artifacts to deploy Azure resources from CLI or CI/CD systems.
-
-<BR>
-
-<details>
-<summary> Click here for details on the above frameworks, references, & architectures</summary><BR>
-<details>
-<summary>AzOps-Accelerator</summary>
-'''*Azure CLI
-* Helm/Tiller
-</details>
-<details>
-<summary>AKS Secure Baseline (Private Clister)</summary>
-'''*Azure CLI
-* Helm/Tiller
-</details>
-<details>
-<summary>Well Architected Framework</summary>
-'''*Azure CLI
-* Helm/Tiller
-</details>
-<details>
-<summary>Cloud Adoption Framework</summary>
-'''*Azure CLI
-* Helm/Tiller
-</details>
-<details>
-<summary>PSRule for Azure Reference</summary>
-'''*Azure CLI
-* Helm/Tiller
-</details>
-<details>
-<summary>Enterprise Scale</summary>
-'''*Azure CLI
-* Helm/Tiller
-</details>
-<details>
-<summary>Enteprise Scale for AZS</summary>
-'''*Azure CLI
-  * Helm/Tiller
-</details>
-</details>
-
-<BR>
-
 ## The 3 Main Components & Building Blocks
-
-<p style="margin-left:5%; margin-right:10%; color:blue">The Randstad team will focus equally over the following 3 areas:<P>
 
 ![project component areas](docassets/AKSBicepComponents.png)
 
@@ -116,7 +91,7 @@ For a more in depth look at the GitHub Actions I created, which steps are perfor
 
 If this is the first time you are working with Bicep files, follow these steps.
 
-1. Use the[Deployment Helper](https://rtmtfiallos.github.io/ABC-AKS/helper/public/) to guide your AKS configuration.
+1. Use the [Deployment Helper](https://rtmtfiallos.github.io/ABC-AKS/helper/public/) to guide your AKS configuration.
 2. Run the commands in the*Provision Environment* tab to create your AKS Environment in your Azure subscription
 3. Run the commands in the*Post Configuration* tab to complete your implementation
 4. [Connect to your AKS Cluster](https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough#connect-to-the-cluster), and deploy your applications as you see fit.
@@ -125,20 +100,10 @@ If this is the first time you are working with Bicep files, follow these steps.
 
 If you're looking to the raw data as part of your deployments, follow these steps.
 
-1. Use the[Deployment Helper](https://rtmtfiallos.github.io/ABC-AKS/helper/public/) to guide your AKS configuration.
+1. Use the [Deployment Helper](https://rtmtfiallos.github.io/ABC-AKS/helper/public/) to guide your AKS configuration.
 2. Capture the parameters on the*Template Parameters File* tab to a file - this is your configuration
 3. Check the*Post Configuration* tab for any commands and save them to a file
-4. Grab the[latest release](https://github.com/Azure/Aks-Construction/releases) of the bicep code
-5. (optionally) Author an Application Main bicep to represent*your application* (see[here](https://github.com/RTmtfiallos/ABC-AKS/blob/main/bicep/samples/SampleAppMain.bicep) for an example)
+4. Grab the [latest release](https://github.com/Azure/Aks-Construction/releases) of the bicep code
+5. (optionally) Author an Application Main bicep to represent*your application* (see [here](https://github.com/RTmtfiallos/ABC-AKS/blob/main/bicep/samples/SampleAppMain.bicep) for an example)
 6. In your CI/CD system, either using one of the GitHub Action Workflow files as a base, or by coding it yourself - initiate a deployment of the bicep code, using your parameter file
 7. In your CI/CD system, deploy your application(s) to the AKS cluster
-
-## Guiding Principals
-
-The guiding principal we have with is to focus on the the *downstream use* of the the parameters. As such, these are our specific practices.
-
-1. Deploy all components through a single, modular, idempotent bicep template Converge on a single bicep template, which can easily be consumed as a module
-2. Provide best-practice defaults, then use parameters for different environment deployments
-3. Minimise "manual" steps for ease of automation
-4. Maintain quality through validation & CI/CD pipelines that also serve as working samples/docs
-5. Focus on AKS and supporting services, linking to other repos to solve; Demo apps / Developer workstations / Jumpboxes / CI Build Agents / Certificate Authorities
