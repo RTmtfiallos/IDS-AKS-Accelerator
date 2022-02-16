@@ -6,14 +6,14 @@ Deploying an Enterprise ready Kubernetes cluster is extremely complex and can be
 
 ## How Randstad helped the ABC Data Science team
 
-The Randstad project team focused on developing a simple, secure,  light-weight, and flexible solution that would streamline AKS configration and deployments.
+The Randstad project team focused on developing a simple, secure,  light-weight, and flexible solution that would streamline AKS configuration and deployments.
 
 ### Critical requirements and success factors
 
 * Simple to use and understand
-* Delivers repeatble results and expected infrastructre
+* Delivers repeatble results and expected infrastructure
 * Has flexible configuration options that can be easily modified to include new features/patterns/frameworks in the future
-* Minimize post deployment AKS configurtion needs
+* Minimize post deployment AKS configuration needs
 * Can be fully automated and include testing, is efficient, and streamlined.
 
 ### Guiding Principals
@@ -49,7 +49,7 @@ Randstad leveraged the following Architectural approaches, frameworks, best prac
     * Operational Excellence
     * Performance Efficiency
 
-      ![](assets/20220216_101620_waf-diagram-revised.png)
+  ![](assets/20220216_101620_waf-diagram-revised.png)
   * In the center, is the Well-Architected Framework, which includes the five pillars of architectural excellence. Surrounding the Well-Architected Framework are six supporting elements:
 
     * Azure Well-Architected Review
