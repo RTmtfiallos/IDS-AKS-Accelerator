@@ -52,14 +52,14 @@ Randstad leveraged the following Architectural approaches, frameworks, best prac
 
       ![](assets/20220216_101620_waf-diagram-revised.png)
 
-* In the center, is the Well-Architected Framework, which includes the five pillars of architectural excellence. Surrounding the Well-Architected Framework are six supporting elements:
+  * In the center, is the Well-Architected Framework, which includes the five pillars of architectural excellence. Surrounding the Well-Architected Framework are six supporting elements:
 
-  * Azure Well-Architected Review
-  * Azure Advisor
-  * Documentation
-  * Partners, Support, and Services Offers
-  * Reference Architectures
-  * Design Principles
+    * Azure Well-Architected Review
+    * Azure Advisor
+    * Documentation
+    * Partners, Support, and Services Offers
+    * Reference Architectures
+    * Design Principles
 * [Cloud Adoption Framework](https://azure.microsoft.com/en-gb/cloud-adoption-framework/)
   * The Cloud Adoption Framework is a collection of documentation, implementation guidance, best practices, and tools that are proven guidance from Microsoft designed to accelerate your cloud adoption journey.
 * [PSRule for Azure Reference](https://azure.github.io/PSRule.Rules.Azure/en/rules/module/)
