@@ -10,12 +10,11 @@ The Randstad project team focused on developing a simple, secure,  light-weight,
 
 ### Critical requirements and success factors
 
- * Simple to use and understand
- * Delivers repeatble results and expected infrastructre
- * Has flexible configration options that can be easily modified to include new features/patterns/frameworks in the future
- * Minimize post deployment AKS configurtion needs
- * Can be fully automated and include testing, is effcient, and streamlined.
-
+* Simple to use and understand
+* Delivers repeatble results and expected infrastructre
+* Has flexible configration options that can be easily modified to include new features/patterns/frameworks in the future
+* Minimize post deployment AKS configurtion needs
+* Can be fully automated and include testing, is effcient, and streamlined.
 
 ### Guiding Principals
 
@@ -27,13 +26,11 @@ The guiding principal we have with is to focus on the the *downstream use* of th
 4. Maintain quality through validation & CI/CD pipelines that also serve as working samples/docs
 5. Focus on AKS and supporting services, linking to other repos to solve; Demo apps / Developer workstations / Jumpboxes / CI Build Agents / Certificate Authorities
 
-
 Randstad leveraged the following Architectural approaches, frameworks, best practices, and security controls to ensure an optimal AKS cluster design and deployment as well as being very secure
 
 * [AzOps-Accelerator](https://github.com/RTmtfiallos/AzOps-Accelerator)
   * Used in Azure DevOps and GitHub to baseline, pull, push, & validate Azure resources such as policyDefinitions, policyAssignments and roleAssignments.
 * [PSRule for Azure]()
-*
 * [AKS Secure Baseline {Private Cluster}](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks)
 * [Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/)
 * [Cloud Adoption Framework](https://azure.microsoft.com/en-gb/cloud-adoption-framework/)
@@ -62,6 +59,8 @@ We've broken it down to 2 sets of principles to help balance flexibility, functi
 
 ![](assets/20220209_210726_helper1.png)
 
+![](assets/20220216_082814_securityprin.png)
+
 The deployment helper provides links to the official Microsoft documentation to help provide additional context for each feature.
 
 ### IaC - Bicep code files
@@ -77,13 +76,14 @@ The following modules have been commited to the rtdeployed for this project and 
 A number of [GitHub actions](https://github.com/RTmtfiallos/ABC-AKS/tree/main/.github/workflows) are used in the repo that run on push/pr/schedules. These can be copied into your own repo and customised for your CI/CD pipeline. A robust deployment pipeline is essential when coordinating the deployment of multiple Azure services that work together, additionally there is configuration that cannot be set in the template and that needs to be automated (and tested) consistently.
 ![preview screenshot of the helper wizard](docassets/ghactionworkflow.jpg)
 
-| CI Name         | Actions Workflow                                                                                             | Parameter file                                                                                                                        | CI Status | Notes                                                                                |
-| --------------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------ |
+
+| CI Name         | Actions Workflow                                                                                                | Parameter file                                                                                                                           | CI Status | Notes                                                                                |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------- | -------------------------------------------------------------------------------------- |
 | Starter cluster | [StandardCI.yml](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows/StandardCI.yml)             | [ESLZ Sandbox](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows_dep/AksDeploy-Basic.parameters.json)                   |           | A simple deployment example, good for first time users of this project to start with |
 | BYO Vnet        | [ByoVnetCI.yml](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows/ByoVnetCI.yml)               | [ESLZ Byo peered vnet](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows_dep/AksDeployByoVnet.parameters.jso)           |           | Comprehensive IaC flow deploying multiple smoke-test apps                            |
 | Private cluster | [ByoVnetPrivateCI.yml](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows/ByoVnetPrivateCI.yml) | [ESLZ Byo private vnet](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows_dep/AksDeploy-ByoVnetPrivate.parameters.json) |           | As above, but with a focus on private networking                                     |
 
-For a more in depth look at the GitHub Actions I created, which steps are performed and the different CI practices they demonstrate, please refer to [this page](https://github.com/RTmtfiallos/ABC-AKS/GhActions.md).
+For a more in depth look at the GitHub Actions created, which steps are performed and the different CI practices they demonstrate, please refer to [this page](GhActions).
 
 ## Getting Started
 
