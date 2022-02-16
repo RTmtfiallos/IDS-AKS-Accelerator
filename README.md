@@ -1,6 +1,6 @@
 <img align="left" width="100" height="100" src="https://docs.microsoft.com/answers/topics/25346/icon.html?t=168484">
 
-# AKS Deploy Helper / Configurator
+# AKS Deployment Helper
 
 Deploying an Enterprise ready Kubernetes cluster is extremely complex and can be challenging. It can be a nightmare if you add in finicky ARM Templates, syntax errors, and potentially hundreds of parameters to get just exactly right.  So much time can be wasted and frustration builds.
 
@@ -49,9 +49,7 @@ Randstad leveraged the following Architectural approaches, frameworks, best prac
     * Operational Excellence
     * Performance Efficiency
 
-
       ![](assets/20220216_101620_waf-diagram-revised.png)
-
   * In the center, is the Well-Architected Framework, which includes the five pillars of architectural excellence. Surrounding the Well-Architected Framework are six supporting elements:
 
     * Azure Well-Architected Review
@@ -61,6 +59,7 @@ Randstad leveraged the following Architectural approaches, frameworks, best prac
     * Reference Architectures
     * Design Principles
 * [Cloud Adoption Framework](https://azure.microsoft.com/en-gb/cloud-adoption-framework/)
+
   * The Cloud Adoption Framework is a collection of documentation, implementation guidance, best practices, and tools that are proven guidance from Microsoft designed to accelerate your cloud adoption journey.
 * [PSRule for Azure Reference](https://azure.github.io/PSRule.Rules.Azure/en/rules/module/)
 
@@ -131,6 +130,7 @@ For a more in depth look at the GitHub Actions created, which steps are performe
 <BR>
 
 ## Getting Started
+
 ### Basic
 
 If this is the first time you are working with Bicep files, follow these steps.
@@ -151,3 +151,12 @@ If you're looking to the raw data as part of your deployments, follow these step
 5. (optionally) Author an Application Main bicep to represent*your application* (see [here](https://github.com/RTmtfiallos/ABC-AKS/blob/main/bicep/samples/SampleAppMain.bicep) for an example)
 6. In your CI/CD system, either using one of the GitHub Action Workflow files as a base, or by coding it yourself - initiate a deployment of the bicep code, using your parameter file
 7. In your CI/CD system, deploy your application(s) to the AKS cluster
+
+## Deviations from the baseline (and why)
+
+1. System pool and user pool separation is made optional in interests of users seeking a cost optimised configuration.
+2. Ingress. Supports no ingress, [AGIC](https://azure.github.io/application-gateway-kubernetes-ingress/) integrated experience or post deployment ingress scripts for [NGINX](https://docs.nginx.com/nginx-ingress-controller/) and [Contour](https://github.com/projectcontour/contour).
+3. Networking. Hub/Spoke networks typically already exist, and tightly bundling with Kubernetes doesn't work well here. BYO subnets are supported.
+4. AppGw Public Listener. AppGw is the WAF ingress point for inbound internet traffic, however private listeners are also valid for fully private environments.
+5. Cluster SLA. Is defaulted to off in interests of a more cost optimised default configuration, a parameter can be provided to opt in for the paid SLA.
+6. Monitoring Alerts. Parametrised metric analysis frequency, created two presets (1 as per baseline, 2 less frequent), set default to be much less frequent. Added extra monitoring alerts as per in-cluster suggestions.
