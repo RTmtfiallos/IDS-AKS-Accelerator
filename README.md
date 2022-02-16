@@ -26,17 +26,18 @@ The guiding principal we have with is to focus on the the *downstream use* of th
 4. Maintain quality through validation & CI/CD pipelines that also serve as working samples/docs
 5. Focus on AKS and supporting services, linking to other repos to solve; Demo apps / Developer workstations / Jumpboxes / CI Build Agents / Certificate Authorities
 
+### Reference architectures, baselines, frameworks, and best practices
+
 Randstad leveraged the following Architectural approaches, frameworks, best practices, and security controls to ensure an optimal AKS cluster design and deployment as well as being very secure
 
 * [AzOps-Accelerator](https://github.com/RTmtfiallos/AzOps-Accelerator)
   * Used in Azure DevOps and GitHub to baseline, pull, push, & validate Azure resources such as policyDefinitions, policyAssignments and roleAssignments.
-* [PSRule for Azure]()
 * [AKS Secure Baseline {Private Cluster}](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks)
 * [Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/)
 * [Cloud Adoption Framework](https://azure.microsoft.com/en-gb/cloud-adoption-framework/)
 * [PSRule for Azure Reference](https://azure.github.io/PSRule.Rules.Azure/en/rules/module/)
 * [Enterprise-Scale](https://github.com/Azure/Enterprise-Scale)
-* Eterprise Scalefor AKS
+* Enterprise Scale for AKS
 * Azure Policy for AKS
 
 <BR>
@@ -107,3 +108,6 @@ If you're looking to the raw data as part of your deployments, follow these step
 5. (optionally) Author an Application Main bicep to represent*your application* (see [here](https://github.com/RTmtfiallos/ABC-AKS/blob/main/bicep/samples/SampleAppMain.bicep) for an example)
 6. In your CI/CD system, either using one of the GitHub Action Workflow files as a base, or by coding it yourself - initiate a deployment of the bicep code, using your parameter file
 7. In your CI/CD system, deploy your application(s) to the AKS cluster
+
+#### Referenced Projects
+Click [here](referencearchs.md) for a list of projects leveraged
