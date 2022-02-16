@@ -49,7 +49,8 @@ Randstad leveraged the following Architectural approaches, frameworks, best prac
     * Operational Excellence
     * Performance Efficiency
 
-  ![](assets/20220216_101620_waf-diagram-revised.png)
+    ![](assets/20220216_101620_waf-diagram-revised.png)
+    
   * In the center, is the Well-Architected Framework, which includes the five pillars of architectural excellence. Surrounding the Well-Architected Framework are six supporting elements:
 
     * Azure Well-Architected Review
