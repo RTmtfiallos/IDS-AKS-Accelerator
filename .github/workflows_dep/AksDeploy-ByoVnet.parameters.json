@@ -6,7 +6,10 @@
     },
     "parameters": {
         "location" : {
-            "value": "westeurope"
+            "value": "EastUS"
+        },
+        "kubernetesVersion": {
+            "value": "1.23.3"
         },
         "resourceName": {
             "value": "byo"
