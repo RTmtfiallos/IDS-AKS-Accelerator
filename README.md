@@ -2,7 +2,7 @@
 
 # AKS Deployment Helper
 
-Deploying an Enterprise ready Kubernetes cluster is extremely complex and can be challenging. It can be a nightmare if you add in finicky ARM Templates, syntax errors, and potentially hundreds of parameters to get just exactly right.  So much time can be wasted and frustration builds.
+Deploying an Enterprise ready Kubernetes cluster is extremely complex and can be extremely challenging. It can be a nightmare dealing with complex ARM Templates, syntax errors, and potentially hundreds of parameters. Get any of them wrong and the entire deployment can fail - leaving partially deployed resources to clean up. So much time can be wasted resulting in frustration.
 
 ## How Randstad helped the ABC Data Science team
 
@@ -11,34 +11,37 @@ The Randstad project team focused on developing a simple, secure,  light-weight,
 ### Critical requirements and success factors
 
 * Simple to use and understand
-* Delivers repeatble results and expected infrastructure
+* Delivers repeatable results and expected infrastructure
 * Has flexible configuration options that can be easily modified to include new features/patterns/frameworks in the future
 * Minimize post deployment AKS configuration needs
 * Can be fully automated and include testing, is efficient, and streamlined.
 
 ### Guiding Principals
 
-The guiding principal we focus on is the *downstream use* of the parameters. "Shift Left" - Embed security and compliance earlier into IaC & CI/CD pipelines. As such, these are our specific practices:
+Our focus is on the *downstream use* of the parameters. "Shift Left" - Embed security and compliance earlier into IaC & CI/CD pipelines. As such, these are our specific practices:
 
-1. Deploy all components through a single, modular, idempotent bicep template Converge on a single bicep template, which can easily be consumed as a module
-2. Provide best-practice defaults, then use parameters for different environment deployments
-3. Minimise "manual" steps for ease of automation
-4. Maintain quality through validation & CI/CD pipelines that also serve as working samples/docs
-5. Focus on AKS and supporting services, linking to other repos to solve; Demo apps / Developer workstations / Jumpboxes / CI Build Agents / Certificate Authorities
+1. Deploy all components through a single, modular, idempotent bicep template
+2. Converge on a single bicep template, which can easily be consumed as a module
+3. Provide best-practice defaults, then use parameters for different environment deployments
+4. Minimise "manual" steps for ease of automation
+5. Maintain quality through pre-validation, regression tests, and CI/CD pipelines
+6. Focus on AKS and supporting services, linking to other repos to solve Demo apps / Developer workstations / Jumpboxes / CI Build Agents / Certificate Authorities
 
 ### Reference architectures, baselines, frameworks, and best practices
 
-Randstad leveraged the following Architectural approaches, frameworks, best practices, and security controls to ensure an optimal AKS cluster design and automated deployment process.
+Randstad leveraged and incorporated numerous Architectural approaches, frameworks, best practices, and security controls to ensure an optimal AKS cluster design and automated deployment process.
 
 * [AzOps-Accelerator](https://github.com/RTmtfiallos/AzOps-Accelerator)
 
   * Used in Azure DevOps and GitHub to baseline, pull, push, & validate Azure resources such as policyDefinitions, policyAssignments and roleAssignments.
+    <P>
 * [AKS Secure Baseline {Private Cluster}](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks)
 
   * The AKS bicep code is based on the architecture of the AKS Baseline, the Well Architected Framework. It has been highly customized by Randstad to ensure quality deployments with the highest degree of confidence os success. The end result is a fully validated infrastructure before it has been deployed.
   * "Shifting-Left" as much as possible, ensuring AKS is truly 'Well Architected' and fully 'Secure'.
   * Much of the code and configuration in this project is based off the work in the AKS Baseline, the philosophy however, is different.
   * The AKS Baseline covers much of the documentation and practices, and this project focuses on the [implementation experience](https://rtmtfiallos.github.io/ABC-AKS/helper/public/) and [automation samples](https://github.com/RTmtfiallos/ABC-AKS/tree/main/.github/workflows).
+    <P>
 * [Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/)
 
   * The Azure Well-Architected Framework is a set of guiding tenets that can be used to improve the quality of a workload. The framework consists of five pillars of architectural excellence:
@@ -49,19 +52,30 @@ Randstad leveraged the following Architectural approaches, frameworks, best prac
     * Operational Excellence
     * Performance Efficiency
 
-    ![](assets/20220216_101620_waf-diagram-revised.png)
-    
-  * In the center, is the Well-Architected Framework, which includes the five pillars of architectural excellence. Surrounding the Well-Architected Framework are six supporting elements:
+  <BR>
 
-    * Azure Well-Architected Review
-    * Azure Advisor
-    * Documentation
-    * Partners, Support, and Services Offers
-    * Reference Architectures
-    * Design Principles
+  ![](assets/20220216_101620_waf-diagram-revised.png)
+
+<BR>
+
+* In the center, is the Well-Architected Framework, which includes the five pillars of architectural excellence. Surrounding the Well-Architected Framework are six supporting elements:
+
+  * Azure Well-Architected Review
+  * Azure Advisor
+  * Documentation
+  * Partners, Support, and Services Offers
+  * Reference Architectures
+  * Design Principles
+
+<P>
+
 * [Cloud Adoption Framework](https://azure.microsoft.com/en-gb/cloud-adoption-framework/)
 
   * The Cloud Adoption Framework is a collection of documentation, implementation guidance, best practices, and tools that are proven guidance from Microsoft designed to accelerate your cloud adoption journey.
+    <BR>
+
+<P>
+
 * [PSRule for Azure Reference](https://azure.github.io/PSRule.Rules.Azure/en/rules/module/)
 
   * PSRule for Azure includes over 250 rules for validating resources against configuration recommendations.
@@ -70,13 +84,22 @@ Randstad leveraged the following Architectural approaches, frameworks, best prac
     * Shift-left — Identify configuration issues and provide fast feedback in PRs.
     * Quality gates — Implement quality gates between environments such as development, test, and production.
     * Monitor continuously — Perform ongoing checks for configuration optimization opportunities.
+
+<P>
+
 * [Enterprise-Scale](https://github.com/Azure/Enterprise-Scale)
 
   * Enterprise Scale provides prescriptive guidance based on authoritative design for the Azure platform as a whole.
   * The [RT AKS Deployment Helper](https://rtmtfiallos.github.io/ABC-AKS/helper/public/) has an Enterprise-Scale lens, with preset configurations for each landing zone area.
+
+<P>
+
 * [Enterprise Scale for AKS](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/aks/enterprise-scale-landing-zone/)
 
   * The reference implementations in this repository are all focussed on guiding the creation of Landing Zones for AKS within an Enterprise Scale framework. They typically include deployments of Hub/Spoke infrastructure and development vm's, and includes a Terraform implementation.
+
+<P>
+
 * [Azure Policy for AKS](https://docs.microsoft.com/en-us/azure/aks/policy-reference)
 
   * Built-in policy definitions for Azure Kubernetes Service
