@@ -52,7 +52,7 @@
     },
     "vnetAppGatewaySubnetAddressPrefix": {
       "type": "string",
-      "defaultValue": "10.240.4.0/26"
+      "defaultValue": "10.240.100.0/26"
     },
     "acrAgentPoolSubnetAddressPrefix": {
       "type": "string",
