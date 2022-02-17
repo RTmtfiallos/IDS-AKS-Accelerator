@@ -15,7 +15,7 @@
             "value": "1.23.3"
         },
          "vnetAppGatewaySubnetAddressPrefix": {
-            "Value": "10.240.100.0/26"
+            "Value": "10.239.100.0/26"
         },
         "agentCount": {
             "value": 1
