@@ -6,13 +6,13 @@
     },
     "parameters": {
         "location" : {
-            "value": "EastUS"
+            "value": "eastus"
         },
         "kubernetesVersion": {
             "value": "1.23.3"
         },
         "resourceName": {
-            "value": "byo"
+            "value": "BYO"
         },
         "agentCount": {
             "value": 1
