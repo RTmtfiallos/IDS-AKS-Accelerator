@@ -5,7 +5,13 @@
         "template": "bicep/compiled/main.json"
     },
     "parameters": {
-        "resourceName": {
+        "location": {
+            "value": "EastUS"
+          },
+          "kubernetesVersion": {
+            "value": "1.23.3"
+          },
+          "resourceName": {
             "value": "priv"
           },
           "agentVMSize": {
