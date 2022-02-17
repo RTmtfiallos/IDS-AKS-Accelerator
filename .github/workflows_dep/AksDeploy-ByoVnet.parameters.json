@@ -14,6 +14,9 @@
          "kubernetesVersion": {
             "value": "1.23.3"
         },
+         "vnetAppGatewaySubnetAddressPrefix": {
+            "Value": "10.240.100.0/26"
+        },
         "agentCount": {
             "value": 1
         },
