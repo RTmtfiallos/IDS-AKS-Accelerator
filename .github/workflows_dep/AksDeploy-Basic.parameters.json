@@ -6,10 +6,10 @@
     },
     "parameters": {
         "location": {
-            "value": "westeurope"
+            "value": "EastUS"
         },
         "resourceName": {
-            "value": "simplecluster"
+            "value": "AKS"
         },
         "agentCount": {
             "value": 1
