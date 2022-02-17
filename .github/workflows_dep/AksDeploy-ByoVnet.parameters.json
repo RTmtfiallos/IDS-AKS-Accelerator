@@ -5,14 +5,14 @@
         "template": "bicep/compiled/main.json"
     },
     "parameters": {
-        "location" : {
-            "value": "eastus"
-        },
-        "kubernetesVersion": {
-            "value": "1.23.3"
+        "location": {
+            "value": "EastUS"
         },
         "resourceName": {
             "value": "BYO"
+        },
+         "kubernetesVersion": {
+            "value": "1.23.3"
         },
         "agentCount": {
             "value": 1
