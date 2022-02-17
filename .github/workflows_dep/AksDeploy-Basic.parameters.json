@@ -11,6 +11,9 @@
         "resourceName": {
             "value": "AKS"
         },
+         "kubernetesVersion": {
+            "value": "1.23.3"
+        },
         "agentCount": {
             "value": 1
         },
