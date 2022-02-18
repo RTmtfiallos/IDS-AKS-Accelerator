@@ -21,7 +21,7 @@ on:
 env:
   RG: "IDS" #The resource group we're deploying to.
   ParamFilePath: ".github/workflows_dep/AksDeploy-Basic.parameters.json" #Path to parameter file
-  RESNAME: "AKS" #Used in Azure Resource Naming, overrides the default in the parameter file
+  RESNAME: "AKS2" #Used in Azure Resource Naming, overrides the default in the parameter file
   DEPNAME: "Dep${{ github.run_number }}" #Deployment Name
   AZCLIVERSION: 2.30.0 #Pinning to a specific AZ CLI version
 
