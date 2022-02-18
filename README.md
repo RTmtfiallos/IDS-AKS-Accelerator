@@ -1,24 +1,25 @@
 <img align="left" width="100" height="100" src="https://docs.microsoft.com/answers/topics/25346/icon.html?t=168484">
 
-# AKS Deployment Helper
+# IDS AKS Accelerator
 
-Deploying an Enterprise ready Kubernetes cluster is extremely complex and can be extremely challenging. It can be a nightmare dealing with complex ARM Templates, syntax errors, and potentially hundreds of parameters. Get any of them wrong and the entire deployment can fail - leaving partially deployed resources to clean up. So much time can be wasted resulting in frustration.
+It can be extremely challenging to design and deploy a Kubernetes cluster that is Enterprise ready. You have to deal with complex ARM Templates, syntax errors, and potentially hundreds of parameters. The entire deployment can fail if one of them is wrong, leaving partially deployed resources to clean up. Time is wasted, leading to frustration.
 
 ## How Randstad helped the ABC Data Science team
 
-The Randstad project team focused on developing a simple, secure,  light-weight, and flexible solution that would streamline AKS configuration and deployments.
+The Randstad IDS Cloud Practice developed a simple, secure, lightweight, and flexible solution to streamline AKS configuration and deployment.
 
 ### Critical requirements and success factors
 
-* Simple to use and understand
-* Delivers repeatable results and expected infrastructure
-* Has flexible configuration options that can be easily modified to include new features/patterns/frameworks in the future
-* Minimize post deployment AKS configuration needs
-* Can be fully automated and include testing, is efficient, and streamlined.
+* User-friendly and easy to understand
+* Delivers repeatable results and predictable infrastructure
+* Provides flexible configuration options that can be easily modified to incorporate future features, patterns, or frameworks
+* Reduce post-deployment AKS configuration requirements
+* Fully automated, includes testing, and is efficient and streamlined.
+
 
 ### Guiding Principals
 
-Our focus is on the *downstream use* of the parameters. "Shift Left" - Embed security and compliance earlier into IaC & CI/CD pipelines. As such, these are our specific practices:
+The focus is on the downstream application of the parameters. "Shift Left" - Integrate security and compliance earlier into IaC & CI/CD pipelines. Our specific practices are as follows:
 
 1. Deploy all components through a single, modular, idempotent bicep template
 2. Converge on a single bicep template, which can easily be consumed as a module
