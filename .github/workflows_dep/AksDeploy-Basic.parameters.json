@@ -9,7 +9,7 @@
             "value": "EastUS"
         },
         "resourceName": {
-            "value": "AKS"
+            "value": "AKS3"
         },
          "kubernetesVersion": {
             "value": "1.23.3"
