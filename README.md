@@ -4,7 +4,7 @@
 
 It can be extremely challenging to design and deploy a Kubernetes cluster that is Enterprise ready. You have to deal with complex ARM Templates, syntax errors, and potentially hundreds of parameters. The entire deployment can fail if one of them is wrong, leaving partially deployed resources to clean up. Time is wasted, leading to frustration.
 
-## How Randstad helped the ABC Data Science team
+## How Randstad helped ACME LLC
 
 The Randstad IDS Cloud Practice developed a simple, secure, lightweight, and flexible solution to streamline AKS configuration and deployment.
 
@@ -16,36 +16,35 @@ The Randstad IDS Cloud Practice developed a simple, secure, lightweight, and fle
 * Reduce post-deployment AKS configuration requirements
 * Fully automated, includes testing, and is efficient and streamlined.
 
-
 ### Guiding Principals
 
 The focus is on the downstream application of the parameters. "Shift Left" - Integrate security and compliance earlier into IaC & CI/CD pipelines. Our specific practices are as follows:
 
-1. Deploy all components through a single, modular, idempotent bicep template
-2. Converge on a single bicep template, which can easily be consumed as a module
-3. Provide best-practice defaults, then use parameters for different environment deployments
-4. Minimise "manual" steps for ease of automation
-5. Maintain quality through pre-validation, regression tests, and CI/CD pipelines
-6. Focus on AKS and supporting services, linking to other repos to solve Demo apps / Developer workstations / Jumpboxes / CI Build Agents / Certificate Authorities
+1. All components should be deployed through a single, modular, idempotent bicep template
+2. Converge on a bicep template that can be easily consumed as a module
+3. Provide best-practice defaults, then use parameters based on the deployment environment
+4. Automate as many "manual" steps as possible
+5. Ensure quality through pre-validation, regression tests, and continuous integration and delivery pipelines
+6. Concentrate on AKS and supporting services, linking to other repositories to address Demo apps, Developer workstations, Jumpboxes, CI Build Agents, Certificate Authorities, etc.
 
 ### Reference architectures, baselines, frameworks, and best practices
 
-Randstad leveraged and incorporated numerous Architectural approaches, frameworks, best practices, and security controls to ensure an optimal AKS cluster design and automated deployment process.
+The Randstad team leveraged and incorporated numerous architectural approaches, frameworks, best practices, and security controls to design and deploy an Enterprise-Ready AKS cluster.
 
 * [AzOps-Accelerator](https://github.com/RTmtfiallos/AzOps-Accelerator)
 
   * Used in Azure DevOps and GitHub to baseline, pull, push, & validate Azure resources such as policyDefinitions, policyAssignments and roleAssignments.
-    <P>
+    <BR>
 * [AKS Secure Baseline {Private Cluster}](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks)
 
-  * The AKS bicep code is based on the architecture of the AKS Baseline, the Well Architected Framework. It has been highly customized by Randstad to ensure quality deployments with the highest degree of confidence os success. The end result is a fully validated infrastructure before it has been deployed.
-  * "Shifting-Left" as much as possible, ensuring AKS is truly 'Well Architected' and fully 'Secure'.
-  * Much of the code and configuration in this project is based off the work in the AKS Baseline, the philosophy however, is different.
-  * The AKS Baseline covers much of the documentation and practices, and this project focuses on the [implementation experience](https://rtmtfiallos.github.io/ABC-AKS/helper/public/) and [automation samples](https://github.com/RTmtfiallos/ABC-AKS/tree/main/.github/workflows).
-    <P>
+  * The AKS bicep code is based on the architecture of the AKS Baseline, the Well Architected Framework. Randstad has highly customized the solution to ensure successful implementations with a high degree of confidence. The result is a fully validated infrastructure before it is deployed.
+  * To "Shift Left" as much as possible, ensuring AKS is well-architected and secure.
+  * Although the code and configuration for this project are largely based on the AKS Baseline, the philosophy is different.
+  * In this project, we are focusing on the [implementation experience](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/helper/public/) and [automation workflows](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/tree/main/.github/workflows). The AKS Baseline contains much of the documentation and practices.
+    <BR>
 * [Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/)
 
-  * The Azure Well-Architected Framework is a set of guiding tenets that can be used to improve the quality of a workload. The framework consists of five pillars of architectural excellence:
+  * Microsoft's Azure Well-Architected Framework outlines guiding principles for improving the quality of workloads. It consists of five pillars of architectural excellence:
 
     * Reliability
     * Security
@@ -59,7 +58,7 @@ Randstad leveraged and incorporated numerous Architectural approaches, framework
 
 <BR>
 
-* In the center, is the Well-Architected Framework, which includes the five pillars of architectural excellence. Surrounding the Well-Architected Framework are six supporting elements:
+* At its center is the Well-Architected Framework, which includes the five pillars of architectural excellence. The framework is complemented by six supporting elements.
 
   * Azure Well-Architected Review
   * Azure Advisor
@@ -75,14 +74,13 @@ Randstad leveraged and incorporated numerous Architectural approaches, framework
   * The Cloud Adoption Framework is a collection of documentation, implementation guidance, best practices, and tools that are proven guidance from Microsoft designed to accelerate your cloud adoption journey.
     <BR>
 
-<P>
 
 * [PSRule for Azure Reference](https://azure.github.io/PSRule.Rules.Azure/en/rules/module/)
 
   * PSRule for Azure includes over 250 rules for validating resources against configuration recommendations.
     Rules automatically detect and analyze resources from Azure IaC artifacts.
   * Pre-flight validation can be integrated into a continuous integration (CI) pipeline as unit tests to:
-    * Shift-left — Identify configuration issues and provide fast feedback in PRs.
+    * "Shift-left" — Identify configuration issues and provide fast feedback in PRs.
     * Quality gates — Implement quality gates between environments such as development, test, and production.
     * Monitor continuously — Perform ongoing checks for configuration optimization opportunities.
 
