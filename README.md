@@ -54,7 +54,7 @@ The Randstad team leveraged and incorporated numerous architectural approaches, 
 
   <BR>
 
-  ![](assets/20220216_101620_waf-diagram-revised.png)
+<img src="https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/assets/20220216_101620_waf-diagram-revised.png?raw=true">
 
 <BR>
 
@@ -111,7 +111,7 @@ As a result, ABC is able to quickly deploy the Azure Kubernetes Service as well 
 
 ## The 3 Main Components & Building Blocks for the solution
 
-![project component areas](docassets/AKSBicepComponents.png)
+<img  src="https://raw.githubusercontent.com/RTmtfiallos/IDS-AKS-Accelerator/main/docassets/AKSBicepComponents.png">
 
 ### Wizard experience
 
