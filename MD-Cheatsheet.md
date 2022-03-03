@@ -335,7 +335,7 @@ Remember that blank lines are needed before/after a section of markdown that is 
 >
 > Markdown will turn this into:
 >
-> <a href="<<<<<<<http://example.com/>>>>>>>">http://example.com/</a>
+> <a href="<<<<<<<<http://example.com/>>>>>>>>">http://example.com/</a>
 >
 > Automatic links for email addresses work similarly, except that Markdown will also perform a bit of randomized decimal and hex entity-encoding to help obscure your address from address-harvesting spambots. For example, Markdown will turn this:
 >
