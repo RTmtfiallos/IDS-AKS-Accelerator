@@ -39,7 +39,7 @@ This is the code you need to align images to the right:
 
 ---
 
-## Markdown Formatting on steriods
+## Markdown Formatting on steroids
 
 If you like this, you might enjoy [markdown-magic](https://github.com/davidwells/markdown-magic). I built it to automatically format markdown files and allow folks to sync docs/code/data from external sources.
 
@@ -59,12 +59,13 @@ A single TAB before text with a blank line before and after it  make a non wrapp
 
 <br>
 
-## Tripple layer drill down example, indented
+## Triple layer drill down example, indented
 
 <details>
 <summary>Heading1</summary>
 
 some text
+
 * <details>
     <summary>Heading1.1</summary>
 
@@ -79,7 +80,7 @@ some text
 
 <BR>
 
-## Tripple layer drill down, no indent
+## Triple layer drill down, no indent
 
 <details>
 <summary>Heading1</summary>
@@ -335,7 +336,7 @@ Markdown supports a shortcut style for creating "automatic" links for URLs and e
 
 Markdown will turn this into:
 
-<a href="<http://example.com/>">http://example.com/</a>
+<a href="<<<<<http://example.com/>>>>>">http://example.com/</a>
 
 Automatic links for email addresses work similarly, except that Markdown will also perform a bit of randomized decimal and hex entity-encoding to help obscure your address from address-harvesting spambots. For example, Markdown will turn this:
 
