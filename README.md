@@ -119,7 +119,7 @@ To help guide ABC's initial AKS configuration and fully automate the deployment 
 
 The AKS Deployment helper will provide a set of parameters and scripts to make deployment simple and fully automated. It uses several preset configurations, patterns, and building blocks to guide configuration decisions.
 
-If requirements change, or if there is a need for another AKS Cluster you can simply ceate a new set of deployment files to use whenever needed.
+If requirements change, or if there is a need for another AKS Cluster you can simply create a new set of deployment files to use whenever needed.
 
 We've broken it down to 2 sets of principles to help balance flexibility, function, and costs; **Operations & Security Principles.**
 
