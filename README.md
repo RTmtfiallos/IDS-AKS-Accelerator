@@ -2,7 +2,7 @@
 
 # IDS AKS Accelerator
 
-It can be extremely challenging to design and deploy a Kubernetes cluster that is Enterprise ready. You have to deal with complex ARM Templates, syntax errors, and potentially hundreds of parameters. The entire deployment can fail if one of them is wrong, leaving partially deployed resources to clean up. Time is wasted, leading to frustration.
+It can be extremel y challenging to design and deploy a Kubernetes cluster that is Enterprise ready. You have to deal with complex ARM Templates, syntax errors, and potentially hundreds of parameters. The entire deployment can fail if one of them is wrong, leaving partially deployed resources to clean up. Time is wasted, leading to frustration.
 
 ## How Randstad helped ACME LLC
 
@@ -13,16 +13,18 @@ The Randstad IDS Cloud Practice developed a simple, secure, lightweight, and fle
 * User-friendly and easy to understand
 * Delivers repeatable results and predictable infrastructure
 * Provides flexible configuration options that can be easily modified to incorporate future features, patterns, or frameworks
+* sjadjhasdjhasjd
+* kasdkaskjdasjkda
 * Reduce post-deployment AKS configuration requirements
 * Fully automated, includes testing, and is efficient and streamlined.
 
 ### Guiding Principals
 
-The focus is on the downstream application of the parameters. "Shift Left" - Integrate security and compliance earlier into IaC & CI/CD pipelines. Our specific practices are as follows:
+## The focus is on the downstream application of the parameters. "Shift Left" - Integrate security and compliance earlier into IaC & CI/CD pipelines. Our specific practices are as follows:
 
 1. All components should be deployed through a single, modular, idempotent bicep template
 2. Converge on a bicep template that can be easily consumed as a module
-3. Provide best-practice defaults, then use parameters based on the deployment environment
+3. Provide bes[t-practice defaults, then use parameters based on](https://google.com) the deployment environment
 4. Automate as many "manual" steps as possible
 5. Ensure quality through pre-validation, regression tests, and continuous integration and delivery pipelines
 6. Concentrate on AKS and supporting services, linking to other repositories to address Demo apps, Developer workstations, Jumpboxes, CI Build Agents, Certificate Authorities, etc.
@@ -55,7 +57,6 @@ The Randstad team leveraged and incorporated numerous architectural approaches, 
   <BR>
 
 <img src="https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/assets/20220216_101620_waf-diagram-revised.png?raw=true">
-
 
 * At its center is the Well-Architected Framework, which includes the five pillars of architectural excellence. The framework is complemented by six supporting elements.
 
