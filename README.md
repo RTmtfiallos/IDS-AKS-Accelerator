@@ -6,7 +6,7 @@ It can be extremely challenging to design and deploy a Kubernetes cluster that i
 
 ## How Randstad helped ACME LLC
 
-The Randstad IDS Cloud Practice developed a simple, secure, lightweight, and flexible solution to streamline AKS configuration and deployment.
+The Randstad IDS Cloud Practice developed a simple, secure, lightweight, and flexible solution to streamline AKS configuration and deployment..
 
 ### Critical requirements and success factors
 
