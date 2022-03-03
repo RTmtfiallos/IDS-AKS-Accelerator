@@ -37,10 +37,10 @@ The Randstad team leveraged and incorporated numerous architectural approaches, 
     <BR>
 * [AKS Secure Baseline {Private Cluster}](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks)
 
-  * The AKS bicep code is based on the architecture of the AKS Baseline, the Well Architected Framework. Randstad has highly customized the solution to ensure successful implementations with a high degree of confidence. The result is a fully validated infrastructure before it is deployed.
+  * The AKS bicep code is based on the architecture of the AKS Baseline, the Well Architected Framework. Randstad has highly customized the solution to ensure successful implementations with a high degree of confidence. The result is a fully validated infrastructure before it's deployed.
   * To "Shift Left" as much as possible, ensuring AKS is well-architected and secure.
   * Although the code and configuration for this project are largely based on the AKS Baseline, the philosophy is different.
-  * In this project, we are focusing on the [implementation experience](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/helper/public/) and [automation workflows](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/tree/main/.github/workflows). The AKS Baseline contains much of the documentation and practices.
+  * For this client and project, we are focusing on the [implementation experience](https://rtmtfiallos.github.io/IDS-AKS-Accelerator/helper/public/) and [automation workflows](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/tree/main/.github/workflows). The AKS Baseline contains much of the documentation and practices.
     <BR>
 * [Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/)
 
@@ -89,7 +89,7 @@ The Randstad team leveraged and incorporated numerous architectural approaches, 
 * [Enterprise-Scale](https://github.com/Azure/Enterprise-Scale)
 
   * Enterprise Scale provides prescriptive guidance based on authoritative design for the Azure platform as a whole.
-  * The [RT AKS Deployment Helper](https://rtmtfiallos.github.io/ABC-AKS/helper/public/) has an Enterprise-Scale lens, with preset configurations for each landing zone area.
+  * The [RT AKS Deployment Helper](https://rtmtfiallos.github.io/IDS-AKS-Accelerator/helper/public/) has an Enterprise-Scale lens, with preset configurations for each landing zone area.
 
 <P>
 
@@ -115,7 +115,7 @@ As a result, ABC is able to quickly deploy the Azure Kubernetes Service as well 
 
 ### Wizard experience
 
-To help guide ABC's initial AKS configuration and fully automate the deployment of the Dev & Production ABC AKS clusters, use the developed and highly customizeable [RT AKS Deployment Helper](https://rtmtfiallos.github.io/ABC-AKS/helper/public/).
+To help guide ABC's initial AKS configuration and fully automate the deployment of the Dev & Production ABC AKS clusters, use the developed and highly customizeable [RT AKS Deployment Helper](https://rtmtfiallos.github.io/IDS-AKS-Accelerator/helper/public/).
 
 The AKS Deployment helper will provide a set of parameters and scripts to make deployment simple and fully automated. It uses several preset configurations, patterns, and building blocks to guide configuration decisions.
 
@@ -133,20 +133,20 @@ The deployment helper provides links to the official Microsoft documentation to 
 
 ### IaC - Bicep code files
 
-IaC (Infrastructure as Code) code files have been modularised into their component areas. [Main.bicep](https://github.com/RTmtfiallos/ABC-AKS/blob/main/bicep/main.bicep) references them and they are expected to be present in the same directory. The Deployment Helper leverages an Arm json compiled version of all the bicep files.
+IaC (Infrastructure as Code) code files have been modularised into their component areas. [Main.bicep](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/bicep/main.bicep) references them and they are expected to be present in the same directory. The Deployment Helper leverages an Arm json compiled version of all the bicep files.
 
 ### DevOps - GitHub Actions
 
-A number of [GitHub actions](https://github.com/RTmtfiallos/ABC-AKS/tree/main/.github/workflows) are used in the repo that run on push/pr/schedules. These can be copied into your own repo and customised for your CI/CD pipeline. A robust deployment pipeline is essential when coordinating the deployment of multiple Azure services that work together, additionally there is configuration that cannot be set in the template and that needs to be automated (and tested) consistently.
+A number of [GitHub actions](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/actions) are used in the repo that run on push/pr/schedules. These can be copied into your own repo and customised for your CI/CD pipeline. A robust deployment pipeline is essential when coordinating the deployment of multiple Azure services that work together, additionally there is configuration that cannot be set in the template and that needs to be automated (and tested) consistently.
 
 ![preview screenshot of the helper wizard](docassets/ghactionworkflow.jpg)
 
 
 | CI Name         | Actions Workflow                                                                                                | Parameter file                                                                                                                           | CI Status | Notes                                                                                |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------- | -------------------------------------------------------------------------------------- |
-| Starter cluster | [StandardCI.yml](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows/StandardCI.yml)             | [ESLZ Sandbox](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows_dep/AksDeploy-Basic.parameters.json)                   |           | A simple deployment example, good for first time users of this project to start with |
-| BYO Vnet        | [ByoVnetCI.yml](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows/ByoVnetCI.yml)               | [ESLZ Byo peered vnet](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows_dep/AksDeployByoVnet.parameters.jso)           |           | Comprehensive IaC flow deploying multiple smoke-test apps                            |
-| Private cluster | [ByoVnetPrivateCI.yml](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows/ByoVnetPrivateCI.yml) | [ESLZ Byo private vnet](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows_dep/AksDeploy-ByoVnetPrivate.parameters.json) |           | As above, but with a focus on private networking                                     |
+| Starter cluster | [StandardCI.yml](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/.github/workflows/StandardCI.yml)             | [ESLZ Sandbox](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/.github/workflows_dep/AksDeploy-Basic.parameters.json)                   |           | A simple deployment example, good for first time users of this project to start with |
+| BYO Vnet        | [ByoVnetCI.yml](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/.github/workflows/ByoVnetCI.yml)               | [ESLZ Byo peered vnet](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/.github/workflows_dep/AksDeployByoVnet.parameters.jso)           |           | Comprehensive IaC flow deploying multiple smoke-test apps                            |
+| Private cluster | [ByoVnetPrivateCI.yml](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/.github/workflows/ByoVnetPrivateCI.yml) | [ESLZ Byo private vnet](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/.github/workflows_dep/AksDeploy-ByoVnetPrivate.parameters.json) |           | As above, but with a focus on private networking                                     |
 
 For a more in depth look at the GitHub Actions created, which steps are performed and the different CI practices they demonstrate, please refer to [this page](GhActions.md).
 
@@ -158,7 +158,7 @@ For a more in depth look at the GitHub Actions created, which steps are performe
 
 If this is the first time you are working with Bicep files, follow these steps.
 
-1. Use the [Deployment Helper](https://rtmtfiallos.github.io/ABC-AKS/helper/public/) to guide your AKS configuration.
+1. Use the [Deployment Helper](https://rtmtfiallos.github.io/IDS-AKS-Accelerator/helper/public/) to guide your AKS configuration.
 2. Run the commands in the*Provision Environment* tab to create your AKS Environment in your Azure subscription
 3. Run the commands in the*Post Configuration* tab to complete your implementation
 4. [Connect to your AKS Cluster](https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough#connect-to-the-cluster), and deploy your applications as you see fit.
@@ -167,11 +167,11 @@ If this is the first time you are working with Bicep files, follow these steps.
 
 If you're looking to the raw data as part of your deployments, follow these steps.
 
-1. Use the [Deployment Helper](https://rtmtfiallos.github.io/ABC-AKS/helper/public/) to guide your AKS configuration.
+1. Use the [Deployment Helper](https://rtmtfiallos.github.io/IDS-AKS-Accelerator/helper/public/) to guide your AKS configuration.
 2. Capture the parameters on the*Template Parameters File* tab to a file - this is your configuration
 3. Check the *Post Configuration* tab for any commands and save them to a file
 4. Grab the [latest release](https://github.com/Azure/Aks-Construction/releases) of the bicep code
-5. (optionally) Author an Application Main bicep to represent*your application* (see [here](https://github.com/RTmtfiallos/ABC-AKS/blob/main/bicep/samples/SampleAppMain.bicep) for an example)
+5. (optionally) Author an Application Main bicep to represent*your application* (see [here](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/bicep/samples/SampleAppMain.bicep) for an example)
 6. In your CI/CD system, either using one of the GitHub Action Workflow files as a base, or by coding it yourself - initiate a deployment of the bicep code, using your parameter file
 7. In your CI/CD system, deploy your application(s) to the AKS cluster
 

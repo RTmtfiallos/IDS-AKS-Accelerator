@@ -46,7 +46,7 @@ Warnings do not form part of the pass/fail of the action step, however you can u
 
 #### PSRule for Azure
 
-An interesting project for performing pre/post validation of Azure Resources against the Well Architected Framework is [PSRule for Azure](https://azure.github.io/PSRule.Rules.Azure/). Over [200 rules](https://azure.github.io/PSRule.Rules.Azure/en/baselines/Azure.All/) will be evaluated against your Arm template, ranging from Security configuration to naming conventions.
+An interesting project for performing pre/post validation of Azure Resources against the Well Architected Framework is [PSRule for Azure](https://azure.github.io/PSRule.Rules.Azure/). Over [270 rules](https://azure.github.io/PSRule.Rules.Azure/en/baselines/Azure.All/) will be evaluated against your Arm template, ranging from Security configuration to naming conventions.
 
 #### Using the AZ CLI to verify
 
