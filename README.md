@@ -56,7 +56,6 @@ The Randstad team leveraged and incorporated numerous architectural approaches, 
 
 <img src="https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/assets/20220216_101620_waf-diagram-revised.png?raw=true">
 
-<BR>
 
 * At its center is the Well-Architected Framework, which includes the five pillars of architectural excellence. The framework is complemented by six supporting elements.
 
@@ -67,14 +66,12 @@ The Randstad team leveraged and incorporated numerous architectural approaches, 
   * Reference Architectures
   * Design Principles
 
-<P>
+<P></P>
 
 * [Cloud Adoption Framework](https://azure.microsoft.com/en-gb/cloud-adoption-framework/)
 
   * The Cloud Adoption Framework is a collection of documentation, implementation guidance, best practices, and tools that are proven guidance from Microsoft designed to accelerate your cloud adoption journey.
     <BR>
-
-
 * [PSRule for Azure Reference](https://azure.github.io/PSRule.Rules.Azure/en/rules/module/)
 
   * PSRule for Azure includes over 250 rules for validating resources against configuration recommendations.
@@ -84,20 +81,20 @@ The Randstad team leveraged and incorporated numerous architectural approaches, 
     * Quality gates — Implement quality gates between environments such as development, test, and production.
     * Monitor continuously — Perform ongoing checks for configuration optimization opportunities.
 
-<P>
+<P></P>
 
 * [Enterprise-Scale](https://github.com/Azure/Enterprise-Scale)
 
   * Enterprise Scale provides prescriptive guidance based on authoritative design for the Azure platform as a whole.
   * The [RT AKS Deployment Helper](https://rtmtfiallos.github.io/IDS-AKS-Accelerator/helper/public/) has an Enterprise-Scale lens, with preset configurations for each landing zone area.
 
-<P>
+<P></P>
 
 * [Enterprise Scale for AKS](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/aks/enterprise-scale-landing-zone/)
 
   * The reference implementations in this repository are all focussed on guiding the creation of Landing Zones for AKS within an Enterprise Scale framework. They typically include deployments of Hub/Spoke infrastructure and development vm's, and includes a Terraform implementation.
 
-<P>
+<P></P>
 
 * [Azure Policy for AKS](https://docs.microsoft.com/en-us/azure/aks/policy-reference)
 
@@ -142,8 +139,8 @@ A number of [GitHub actions](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/
 ![preview screenshot of the helper wizard](docassets/ghactionworkflow.jpg)
 
 
-| CI Name         | Actions Workflow                                                                                                | Parameter file                                                                                                                           | CI Status | Notes                                                                                |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------- | -------------------------------------------------------------------------------------- |
+| CI Name         | Actions Workflow                                                                                                            | Parameter file                                                                                                                                       | CI Status | Notes                                                                                |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- | -------------------------------------------------------------------------------------- |
 | Starter cluster | [StandardCI.yml](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/.github/workflows/StandardCI.yml)             | [ESLZ Sandbox](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/.github/workflows_dep/AksDeploy-Basic.parameters.json)                   |           | A simple deployment example, good for first time users of this project to start with |
 | BYO Vnet        | [ByoVnetCI.yml](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/.github/workflows/ByoVnetCI.yml)               | [ESLZ Byo peered vnet](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/.github/workflows_dep/AksDeployByoVnet.parameters.jso)           |           | Comprehensive IaC flow deploying multiple smoke-test apps                            |
 | Private cluster | [ByoVnetPrivateCI.yml](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/.github/workflows/ByoVnetPrivateCI.yml) | [ESLZ Byo private vnet](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/.github/workflows_dep/AksDeploy-ByoVnetPrivate.parameters.json) |           | As above, but with a focus on private networking                                     |
