@@ -130,11 +130,11 @@ Each night the resource groups used for IaC testing are purged of all resources.
 
 Different action workflow files showcase different complexities of CI/CD practices which are summarised below.
 
-1. [Deployment Verification](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows/ByoVnetCI.yml#L100)
-1. [Deployment What-If](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows/ByoVnetCI.yml#L111)
-1. [Deployment What-If Pester Testing](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows/ByoVnetCI.yml#L141)
-1. [Bicep Deployment](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows/ByoVnetCI.yml#L189)
-1. [Post Deployment Addons](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows/ByoVnetPrivateCI.yml#L194)
-1. [Verify Deployment Configuration](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows/ByoVnetCI.yml#L261)
-1. [Deploy Test workload](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows/ByoVnetPrivateCI.yml#L230)
-1. [Verify Test workload](https://github.com/RTmtfiallos/ABC-AKS/blob/main/.github/workflows/ByoVnetPrivateCI.yml#L278)
+1. [Deployment Verification](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/.github/workflows/ByoVnetCI.yml#L80)
+1. [Deployment What-If](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/.github/workflows/ByoVnetCI.yml#L235)
+1. [Deployment What-If Pester Testing](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/.github/workflows/ByoVnetCI.yml#L307)
+1. [Bicep Deployment](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/.github/workflows/ByoVnetCI.yml#L404)
+1. [Post Deployment Addons](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/.github/workflows/ByoVnetPrivateCI.yml#L215)
+1. [Verify Deployment Configuration](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/.github/workflows/ByoVnetCI.yml#L108)
+1. [Deploy Test workload](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/.github/workflows/ByoVnetPrivateCI.yml#L269)
+1. [Verify Test workload](https://github.com/RTmtfiallos/IDS-AKS-Accelerator/blob/main/.github/workflows/ByoVnetPrivateCI.yml#L284)
