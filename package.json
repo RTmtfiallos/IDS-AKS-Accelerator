@@ -57,7 +57,7 @@
   "description": "Automatically update markdown files with content from external sources",
   "devDependencies": {
     "ansi-styles": "^4.2.1",
-    "ava": "^3.15.0",
+    "ava": "^5.2.0",
     "concordance": "^5.0.1",
     "doxxx": "^1.0.0",
     "rimraf": "^3.0.2",
